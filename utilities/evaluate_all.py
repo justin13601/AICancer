@@ -14,6 +14,7 @@ from torchsummary import summary
 from torch.utils.data.sampler import SubsetRandomSampler
 from torch.autograd import Variable
 
+
 def evaluate_all(net, loader, criterion):
     """ 
     Evaluates the network on a dataset.
