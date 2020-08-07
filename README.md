@@ -38,10 +38,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 - Number of models?
 - Model flow?
 - Checkpoint files?
+- Python 3.6.9
 
 
 ## Dependencies
-- Python > 3.6
 - NumPy
 - PyTorch
 - Matplotlib
