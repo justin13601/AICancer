@@ -1,5 +1,5 @@
 
-![AICancer](/images/logo.png)
+![AICancer](/meta_images/logo.png)
 
 ---------  
 # AICancer or think of a name
@@ -81,7 +81,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 CNN #1 - Training Curves | CNN #2 - Training Curves | CNN #3 - Training Curves | CNN #4 - Training Curves 
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![CNN1](/images/training_curve_cnn1.png)  |  ![CNN2](/images/training_curve_cnn2.png)  |  ![CNN3](/images/training_curve_cnn3.png) | ![CNN4](/images/training_curve_cnn4.png)
+![CNN1](/meta_images/training_curve_cnn1.png)  |  ![CNN2](/meta_images/training_curve_cnn2.png)  |  ![CNN3](/meta_images/training_curve_cnn3.png) | ![CNN4](/meta_images/training_curve_cnn4.png)
 
 
 ## Qualitative Results
