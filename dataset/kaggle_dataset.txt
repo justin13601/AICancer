@@ -1,0 +1,5 @@
+Lung and Colon Cancer Histopathological Images
+
+Lung and Colon Cancer Histopathological Images. (2020). Retrieved 7 August 2020, from https://www.kaggle.com/andrewmvd/lung-and-colon-cancer-histopathological-images?fbclid=IwAR30cuINToNN0WoZZ9KDxIGxQkloeNwu6NLy58KLxlwT0OXqDmteNFOjQbI
+
+Link: https://www.kaggle.com/andrewmvd/lung-and-colon-cancer-histopathological-images?fbclid=IwAR30cuINToNN0WoZZ9KDxIGxQkloeNwu6NLy58KLxlwT0OXqDmteNFOjQbI
