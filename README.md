@@ -36,6 +36,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum.
 - List features maybe?
 - Number of models?
+- Uses PyTorch
+- CNN Models
 - Model flow?
 - Checkpoint files?
 - Python 3.6.9
