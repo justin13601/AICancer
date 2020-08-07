@@ -16,6 +16,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 ## Contents
 - [Overview](#overview)
 - [Dependencies](#dependencies)
+- [Quick Start](#quick-start)
 - [Project Illustration](#project-illustration)
 - [Background & Related Work](#background--related-work)
 - [Data Processing](#data-processing)
@@ -36,6 +37,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 - List features maybe?
 - Number of models?
 - Model flow?
+- Checkpoint files?
 
 
 ## Dependencies
@@ -45,6 +47,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 - Matplotlib
 - Kaggle
 - Split-folders
+
+
+## Quick Start
+
+Install necessary packages:
+    pip install -r requirements.txt
 
 
 ## Project Illustration
@@ -81,12 +89,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 ## Model Evaluation
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
-
-
-*Demonstration:*
-
-    #code that runs the model on a few images?
-    
 
     
 ## Discussion
