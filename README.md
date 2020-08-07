@@ -50,6 +50,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 - Kaggle
 - Split-folders
 - Torchsummary
+- Torchvision
+- Pillow
 
 
 ## Quick Start
