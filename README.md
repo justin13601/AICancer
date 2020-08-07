@@ -72,7 +72,7 @@ Run start.py:
 
 Output:
 
-    >>> Lung Benign
+    >>> Lung: Benign
     
 
 
