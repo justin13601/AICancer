@@ -51,7 +51,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 ## Quick Start
 
-1)Install necessary packages:
+Install necessary packages:
 
     pip install -r requirements.txt
 
