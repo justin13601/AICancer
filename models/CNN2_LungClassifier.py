@@ -9,7 +9,7 @@ torch.manual_seed(1)
 class CNN2_LungClassifier(nn.Module):
     def __init__(self):
         super(CNN2_LungClassifier, self).__init__()
-        self.name="CNN2_LungClassifier"
+        self.name = "CNN2_LungClassifier"
         self.conv1 = nn.Conv2d(3, 12 , 5)
         self.conv2 = nn.Conv2d(12, 10, 5)
         self.pool = nn.MaxPool2d(2, 2)
