@@ -1,5 +1,5 @@
-Lung and Colon Cancer Histopathological Images
+KAGGLE DATASET: Lung and Colon Cancer Histopathological Images
 
-Lung and Colon Cancer Histopathological Images. (2020). Retrieved 7 August 2020, from https://www.kaggle.com/andrewmvd/lung-and-colon-cancer-histopathological-images?fbclid=IwAR30cuINToNN0WoZZ9KDxIGxQkloeNwu6NLy58KLxlwT0OXqDmteNFOjQbI
+Borkowski AA, Bui MM, Thomas LB, Wilson CP, DeLand LA, Mastorides SM. Lung and Colon Cancer Histopathological Image Dataset (LC25000). [Dataset]. Available: https://www.kaggle.com/andrewmvd/lung-and-colon-cancer-histopathological-images [Accessed: 18 May 2020].
 
-Link: https://www.kaggle.com/andrewmvd/lung-and-colon-cancer-histopathological-images?fbclid=IwAR30cuINToNN0WoZZ9KDxIGxQkloeNwu6NLy58KLxlwT0OXqDmteNFOjQbI
+Link: https://www.kaggle.com/andrewmvd/lung-and-colon-cancer-histopathological-images
