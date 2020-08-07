@@ -56,6 +56,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 Install necessary packages:
 
     pip install -r requirements.txt
+    
+Edit start.py to include histogram image path:
+
+    ...
+    img = '/dataset/demo/lungn10.png'
+    ...
+    
+Run start.py:
+
+    python start.py
 
 
 ## Project Illustration
