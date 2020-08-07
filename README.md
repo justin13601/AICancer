@@ -10,6 +10,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 ![GitHub](https://img.shields.io/github/license/justin13601/AICancer?style=flat-square)
 
+*Disclaimer: this is purely an educational project. The information on this repo is not intended or implied to be a substitute for professional medical diagnosis. All content, including text, graphics, images and information, contained on or available through this repo is for educational purposes only.*
 
 **Overview**
 ---------
