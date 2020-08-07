@@ -49,6 +49,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 - Matplotlib
 - Kaggle
 - Split-folders
+- Torchsummary
 
 
 ## Quick Start
