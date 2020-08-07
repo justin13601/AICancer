@@ -15,7 +15,7 @@ from torch.utils.data.sampler import SubsetRandomSampler
 from torch.autograd import Variable
 
 
-def evaluate_all(net, loader, criterion):
+def evaluate_all(net, loader, criterion, use_cuda=False):
     """ 
     Evaluates the network on a dataset.
 
@@ -32,16 +32,8 @@ def evaluate_all(net, loader, criterion):
     total_epoch = 0
     for i, data in enumerate(loader, 0):
         inputs, labels = data
-        # Convert labels to 0/1
-        #newlabels=torch.tensor([])
-        #print(type(labels))
-        #for i in labels:
-              #if i < 2:
-              #  newlabels=torch.cat((newlabels,torch.tensor([0]).float()),0)
-              #else:
-                #newlabels=torch.cat((newlabels,torch.tensor([1]).float()),0)
         if use_cuda and torch.cuda.is_available():
-            inputs= inputs.cuda()
+            inputs = inputs.cuda()
             labels = labels.cuda()
         outputs = net(inputs)
         loss = criterion(outputs, labels.float())
@@ -52,4 +44,3 @@ def evaluate_all(net, loader, criterion):
     err = float(total_err) / total_epoch
     loss = float(total_loss) / (i + 1)
     return err, loss
-    
