@@ -82,7 +82,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 
 ## Background & Related Work
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
+Machine learning is an evolving technology that is proving to be increasingly useful to the field of cancer diagnosis. Algorithms are already being created for some of the most common forms of the disease: brain cancer, prostate cancer, breast cancer, lung cancer, bone cancer, skin cancer and more [2].
+
+Most recently, a new project received praise for its ability to detect cancerous tumours extremely effectively [3]. The initiative was led by Google Health and Imperial College London in a collaborative effort to use technology to enhance breast cancer screening methods [3]. The algorithm was created using a sample set of 29,000 mammograms, and was tested against the judgement of professional radiologists [3]. When verified against one radiologist, the effectiveness of the algorithm was proven to actually be better, approximately on par with a two-person team [3]. 
+
+The benefits of an algorithm like this one are highly attractive because it offers large savings in time efficiency and can assist in healthcare systems lacking radiologists, such as in the UK [3]. In theory, this algorithm should be able to supplement the opinion of one radiologist to obtain optimal results [3].
+
+Our project has a similar goal of using AI to make decisions about the presence of cancer in scans. The success of this breast cancer algorithm shows that machine learning is capable of completing this task with remarkable results. 
+
 
 
 ## Data Processing
@@ -130,4 +137,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 
 ## References
-- Lung and Colon Cancer Histopathological Images. (2020). Retrieved 6 August 2020, from https://www.kaggle.com/andrewmvd/lung-and-colon-cancer-histopathological-images?fbclid=IwAR30cuINToNN0WoZZ9KDxIGxQkloeNwu6NLy58KLxlwT0OXqDmteNFOjQbI
+[1] Lung and Colon Cancer Histopathological Images. (2020). Retrieved 6 August 2020, from https://www.kaggle.com/andrewmvd/lung-and-colon-cancer-histopathological-images?fbclid=IwAR30cuINToNN0WoZZ9KDxIGxQkloeNwu6NLy58KLxlwT0OXqDmteNFOjQbI
+
+[2] N. Savage, “How AI is improving cancer diagnostics,” Nature News, 25-Mar-2020. [Online]. Available: https://www.nature.com/articles/d41586-020-00847-2. [Accessed: 13-Jun-2020].
+
+[3]	F. Walsh, “AI 'outperforms' doctors diagnosing breast cancer,” BBC News, 02-Jan-2020. [Online]. Available: https://www.bbc.com/news/health-50857759. [Accessed: 13-Jun-2020].
+
+[4] Borkowski AA, Bui MM, Thomas LB, Wilson CP, DeLand LA, Mastorides SM. Lung and Colon Cancer Histopathological Image Dataset (LC25000). [Dataset]. Available: https://www.kaggle.com/andrewmvd/lung-and-colon-cancer-histopathological-images [Accessed: 18 May 2020].
+
+[5]	S. Colic, Class Lecture, Topic: “CNN Architectures and Transfer Learning.” APS360H1, Faculty of Applied Science and Engineering, University of Toronto, Toronto, Jun., 1, 2020
