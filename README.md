@@ -72,7 +72,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
-![](/images/test.png)  |  ![](/images/CNN_#2-Training_Curve.png)
+![](/images/training_curve_cnn1.png)  |  ![](/images/CNN_#2-Training_Curve.png)
 
 
 ## Qualitative Results
