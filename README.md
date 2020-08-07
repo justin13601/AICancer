@@ -1,3 +1,3 @@
-![](https://imgur.com/a/Bfj3Xdy)
+![](/images/logo.png)
 
 # AICancer
