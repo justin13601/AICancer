@@ -125,7 +125,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 
 ## Ethical Considerations
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
+Ethical consequences of this algorithm are far-reaching, as the data being used is highly sensitive and the output of the algorithm can directly impact patients. The scans being used to train, validate and test this model in its development phase must be anonymous and consent must be obtained from all patients before the scans are used. 
+
+Additionally, this algorithm should not be blindly trusted to make serious health diagnoses without the consultation of an experienced doctor. Trusting an algorithm to make health decisions is unethical, as it has limited context in which to make decisions (i.e. one scan only, limited to only those types of cancer) and will have limited accuracy. 
+
+Once the algorithm is fully trained and ready to use in a clinical or research setting, doctors using it should be provided with information on how it works and made aware of the risks. This will prevent them from allowing their professional judgement to become overly dependent on the program.
 
 
 ## Project Reflection
