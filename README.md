@@ -27,3 +27,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 - Matplotlib
 - Kaggle
 - Split-folders
+
+**References**
+---------
+- Lung and Colon Cancer Histopathological Images. (2020). Retrieved 6 August 2020, from https://www.kaggle.com/andrewmvd/lung-and-colon-cancer-histopathological-images?fbclid=IwAR30cuINToNN0WoZZ9KDxIGxQkloeNwu6NLy58KLxlwT0OXqDmteNFOjQbI
