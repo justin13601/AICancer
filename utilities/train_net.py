@@ -14,8 +14,10 @@ from torchsummary import summary
 from torch.utils.data.sampler import SubsetRandomSampler
 from torch.autograd import Variable
 
+from utilities import utility_funcs
 
-def train_net(net, train_loader, val_loader, batch_size=150, learning_rate=0.005, num_epochs=6):  
+
+def train_net(net, train_loader, val_loader, batch_size=150, learning_rate=0.005, num_epochs=6, use_cuda=False):
     criterion = nn.BCEWithLogitsLoss()
     optimizer = optim.SGD(net.parameters(), lr=learning_rate, momentum=0.9)
     train_err = np.zeros(num_epochs)
@@ -28,12 +30,12 @@ def train_net(net, train_loader, val_loader, batch_size=150, learning_rate=0.005
         total_train_loss = 0.0
         total_train_err = 0.0
         total_epoch = 0
-        i=0
+        i = 0
         for imgs, labels in iter(train_loader):
-            labels = normalize_label(labels)
+            labels = utility_funcs.normalize_label(labels)
             if use_cuda and torch.cuda.is_available():
-              imgs = imgs.cuda()
-              labels = labels.cuda()
+                imgs = imgs.cuda()
+                labels = labels.cuda()
             optimizer.zero_grad()
             outputs = net(imgs)
             loss = criterion(outputs, labels.float())
@@ -43,18 +45,18 @@ def train_net(net, train_loader, val_loader, batch_size=150, learning_rate=0.005
             total_train_err += int(corr.sum())
             total_train_loss += loss.item()
             total_epoch += len(labels)
-            i=i+1
+            i = i + 1
         train_err[epoch] = float(total_train_err) / total_epoch
-        train_loss[epoch] = float(total_train_loss) / (i+1)
-        val_err[epoch], val_loss[epoch] = evaluate(net, val_loader, criterion)
-        print(("Epoch {}: Train err: {}, Train loss: {} |"+
+        train_loss[epoch] = float(total_train_loss) / (i + 1)
+        val_err[epoch], val_loss[epoch] = utility_funcs.evaluate(net, val_loader, criterion)
+        print(("Epoch {}: Train err: {}, Train loss: {} |" +
                "Validation err: {}, Validation loss: {}").format(
-                   epoch + 1,
-                   train_err[epoch],
-                   train_loss[epoch],
-                   val_err[epoch],
-                   val_loss[epoch]))
-        model_path = get_model_name(net.name, batch_size, learning_rate, epoch)
+            epoch + 1,
+            train_err[epoch],
+            train_loss[epoch],
+            val_err[epoch],
+            val_loss[epoch]))
+        model_path = utility_funcs.get_model_name(net.name, batch_size, learning_rate, epoch)
         torch.save(net.state_dict(), model_path)
     print('Finished Training')
     end_time = time.time()
