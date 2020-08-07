@@ -47,7 +47,7 @@ def normalize_label(labels):
     return norm_labels
 
 
-def evaluate(net, loader, criterion):
+def evaluate(net, loader, criterion, use_cuda=False):
     """ 
     Evaluates the network on a dataset.
 
