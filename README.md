@@ -23,4 +23,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 ---------
 - Python > 3.6
 - NumPy
-- 
+- PyTorch
+- Matplotlib
+- Kaggle
+- Split-folders
