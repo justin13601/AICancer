@@ -10,7 +10,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 ![GitHub](https://img.shields.io/github/license/justin13601/AICancer?style=flat-square)
 
-*Disclaimer: this is purely an educational project. The information on this repo is not intended or implied to be a substitute for professional medical diagnosis. All content, including text, graphics, images and information, contained on or available through this repo is for educational purposes only.*
+**Disclaimer:** this is purely an educational project. The information on this repo is not intended or implied to be a substitute for professional medical diagnosis. All content, including text, graphics, images and information, contained on or available through this repo is for educational purposes only.*
 
 
 ## Contents
@@ -78,7 +78,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 ---------
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
 
-![](/images/CNN #1 - Training Curve.png)
+![](/images/CNN_#1-Training_Curve.png)
 ![](/images/CNN #2 - Training Curve.png)
 ![](/images/CNN #3 - Training Curve.png)
 ![](/images/CNN #4 - Training Curve.png)
@@ -93,6 +93,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 ---------
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
 
+
+*Demonstration:*
 
     #code that runs the model on a few images?
     
