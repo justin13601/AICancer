@@ -25,5 +25,5 @@ class CNN2_LungClassifier(nn.Module):
         x = x.view(-1, 10 * 53 * 53)
         x = F.relu(self.linear_layers(x))
         x = self.final_fc(x)
-        x = x.squeeze(1) # Flatten to [batch_size]
+        x = x.squeeze(1)
         return x
