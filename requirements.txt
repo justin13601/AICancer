@@ -1,6 +1,8 @@
-numpy
+numpy~=1.18.1
 torch
-matplotlib
+matplotlib~=3.3.0
 kaggle
 split-folders
+torchvision~=0.6.0
+pillow~=7.0.0
 torchsummary
