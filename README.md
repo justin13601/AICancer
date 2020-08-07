@@ -12,6 +12,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 *Disclaimer: this is purely an educational project. The information on this repo is not intended or implied to be a substitute for professional medical diagnosis. All content, including text, graphics, images and information, contained on or available through this repo is for educational purposes only.*
 
+## Contents
+- [Overview](#overview)
+- [Quickstart](#quickstart)
+- [Bar Sampling](#bar-sampling)
+- [Feature Engineering](#feature-engineering)
+- [Stacked Autoencoder](#stacked-autoencoder)
+- [Neural Network Model](#neural-network-model)
+- [Random Forest Model](#random-forest-model)
+- [Results](#results)
+- [Online Learning](#online-learning)
+- [What next?](#what-next?)
+- [Contributing](#contributing)
+
 **Overview**
 ---------
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum.
