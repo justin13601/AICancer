@@ -1,5 +1,5 @@
-<a>
-  ![](/images/logo.png)
-</a>
+
+![](/images/logo.png)
+
 ---------  
 # AICancer or whatever
