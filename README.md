@@ -63,7 +63,7 @@ Install necessary packages:
 Edit start.py to include histogram image path:
 
     ...
-    img = '/dataset/demo/lungn10.png'
+    img = 'dataset\demo\lungn10.png'
     ...
     
 Run start.py:
