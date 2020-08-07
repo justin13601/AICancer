@@ -103,7 +103,7 @@ def plot_training_curve(path):
     plt.title("Train vs Validation Loss")
     plt.plot(range(1,n+1), train_loss, label="Train")
     plt.plot(range(1,n+1), val_loss, label="Validation")
+    plt.legend(loc='best')
     plt.xlabel("Epoch")
     plt.ylabel("Loss")
-    plt.legend(loc='best')
     plt.show()
