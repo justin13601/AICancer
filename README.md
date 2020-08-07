@@ -79,7 +79,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 ## Quantitative Results
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
 
-CNN #1 - Training Curves | CNN #2 - Training  Curves | CNN #3 - Training  Curves | CNN #4 - Training Curves 
+CNN #1 - Training Curves | CNN #2 - Training     Curves | CNN #3 - Training      Curves | CNN #4 - Training Curves 
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 ![CNN1](/meta_images/training_curve_cnn1.png)  |  ![CNN2](/meta_images/training_curve_cnn2.png)  |  ![CNN3](/meta_images/training_curve_cnn3.png) | ![CNN4](/meta_images/training_curve_cnn4.png)
 
