@@ -36,6 +36,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum.
 - List features maybe?
 - Number of models?
+- Histogram input in .jpeg or .png format
 - Uses PyTorch
 - CNN Models
 - Model flow?
