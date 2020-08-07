@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 [![ForTheBadge](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://colab.research.google.com/)
 
-![GitHub](https://img.shields.io/github/license/justin13601/AICancer)
+![GitHub](https://img.shields.io/github/license/justin13601/AICancer?style=flat-square)
 
 
 **Overview**
