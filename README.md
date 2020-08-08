@@ -108,35 +108,35 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 <thead>
   <tr>
     <th></th>
-    <th style="text-align:center">Training Accuracy</th>
-    <th style="text-align:center">Validation Accuracy</th>
-    <th style="text-align:center">Testing Accuracy</th>
+    <th>Training Accuracy</th>
+    <th>Validation Accuracy</th>
+    <th>Testing Accuracy</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td style="text-align:center">CNN 1: Lung vs. Colon</td>
-    <td style="text-align:center">99.99%</td>
-    <td style="text-align:center">99.99%</td>
-    <td style="text-align:center">99.99%</td>
+    <td>CNN 1: Lung vs. Colon</td>
+    <td>99.99%</td>
+    <td>99.99%</td>
+    <td>99.99%</td>
   </tr>
   <tr>
-    <td style="text-align:center">CNN 2: Lung Benign vs. Malignant</td>
+    <td>CNN 2: Lung Benign vs. Malignant</td>
     <td style="text-align:center">99.99%</td>
-    <td style="text-align:center">99.5%</td>
-    <td style="text-align:center">99.3%</td>
+    <td>99.5%</td>
+    <td>99.3%</td>
   </tr>
   <tr>
-    <td style="text-align:center">CNN 3: Colon Benign vs. Malignant</td>
-    <td style="text-align:center">100%</td>
-    <td style="text-align:center">94.8%</td>
-    <td style="text-align:center">96.1%</td>
+    <td>CNN 3: Colon Benign vs. Malignant</td>
+    <td>100%</td>
+    <td>94.8%</td>
+    <td>96.1%</td>
   </tr>
   <tr>
-    <td style="text-align:center">CNN 4: Lung SCC vs. ACA</td>
-    <td style="text-align:center">96.0%</td>
-    <td style="text-align:center">90.1%</td>
-    <td style="text-align:center">89.5%</td>
+    <td>CNN 4: Lung SCC vs. ACA</td>
+    <td>96.0%</td>
+    <td>90.1%</td>
+    <td>89.5%</td>
   </tr>
 </tbody>
 </table>
