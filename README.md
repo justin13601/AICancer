@@ -104,6 +104,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 ## Quantitative Results
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
 
+|       	| Training Accuracy 	| Validation Accuracy 	| Testing Accuracy 	|
+|-------	|-------------------	|---------------------	|------------------	|
+| CNN 1 	|                   	|                     	|                  	|
+| CNN 2 	|                   	|                     	|                  	|
+| CNN 3 	|                   	|                     	|                  	|
+| CNN 4 	|                   	|                     	|                  	|
+<p align="center">
+    <b>
+        Table 2:
+    </b>
+    Training, Validation, & Testing Accuracies for Each CNN Model
+</p>
+
 CNN #1 - Error/Loss Training Curves | CNN #2 - Error/Loss Training Curves | CNN #3 - Error/Loss Training Curves | CNN #4 - Error/Loss Training Curves 
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 ![CNN1](/meta_images/training_curve_cnn1.png)  |  ![CNN2](/meta_images/training_curve_cnn2.png)  |  ![CNN3](/meta_images/training_curve_cnn3.png) | ![CNN4](/meta_images/training_curve_cnn4.png)
@@ -111,8 +124,9 @@ CNN #1 - Error/Loss Training Curves | CNN #2 - Error/Loss Training Curves | CNN 
     <b>
         Table 3:
     </b>
-    Test
+    Error/Loss Training Curves for Each CNN Model
 </p>
+
 
 ## Qualitative Results
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
