@@ -115,28 +115,28 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 </thead>
 <tbody>
   <tr>
-    <td>CNN 1</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CNN 1: Lung vs. Colon</td>
+    <td>99.99%</td>
+    <td>99.99%</td>
+    <td>99.99%</td>
   </tr>
   <tr>
-    <td>CNN 2</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CNN 2: Lung Benign vs. Malignant</td>
+    <td>99.99%</td>
+    <td>99.5%</td>
+    <td>99.3%</td>
   </tr>
   <tr>
-    <td>CNN 3</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CNN 3: Colon Benign vs. Malignant</td>
+    <td>100%</td>
+    <td>94.8%</td>
+    <td>96.1%</td>
   </tr>
   <tr>
-    <td>CNN 4</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>CNN 4: Lung SCC vs. ACA</td>
+    <td>96.0%</td>
+    <td>90.1%</td>
+    <td>89.5%</td>
   </tr>
 </tbody>
 </table>
