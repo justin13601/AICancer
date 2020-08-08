@@ -108,7 +108,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 <thead>
   <tr>
     <th></th>
-    <th>Training Accuracy</th>
+    <th align="center">Training Accuracy</th>
     <th>Validation Accuracy</th>
     <th>Testing Accuracy</th>
   </tr>
