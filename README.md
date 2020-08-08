@@ -96,6 +96,64 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 ## Model Architectures
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
 
+<table align="center">
+<thead>
+  <tr>
+    <th></th>
+    <th align="center">Batch Size</th>
+    <th align="center">Learning Rate</th>
+    <th align="center">Epochs</th>
+    <th align="center"># of Convolution Layers</th>
+    <th align="center"># of Pooling Layers</th>
+    <th align="center"># of Fully Connected Layers</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>CNN 1: Lung vs. Colon</td>
+    <td align="center">Blank</td>
+    <td align="center">Blank</td>
+    <td align="center">Blank</td>
+    <td align="center">Blank</td>
+    <td align="center">Blank</td>
+    <td align="center">Blank</td>
+  </tr>
+  <tr>
+    <td>CNN 2: Lung Benign vs. Malignant</td>
+    <td>150</td>
+    <td>0.01</td>
+    <td>9</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>CNN 3: Colon Benign vs. Malignant</td>
+    <td>Blank</td>
+    <td>Blank</td>
+    <td>Blank</td>
+    <td>Blank</td>
+    <td>Blank</td>
+    <td>Blank</td>
+  </tr>
+  <tr>
+    <td>CNN 4: Lung SCC vs. ACA</td>
+    <td>64</td>
+    <td>0.0065</td>
+    <td>13</td>
+    <td>4</td>
+    <td>1</td>
+    <td>2</td>
+  </tr>
+</tbody>
+</table>
+<p align="center">
+    <b>
+        Table 2:
+    </b>
+    Training, Validation, & Testing Accuracies for Each CNN Model
+</p>
+
 
 ## Baseline Model
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
