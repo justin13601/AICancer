@@ -108,7 +108,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 <thead>
   <tr>
     <th></th>
-    <th align="center">Training Accuracy</th>
+    <th>Training Accuracy</th>
     <th>Validation Accuracy</th>
     <th>Testing Accuracy</th>
   </tr>
@@ -116,8 +116,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 <tbody>
   <tr>
     <td>CNN 1: Lung vs. Colon</td>
-    <td>99.99%</td>
-    <td>99.99%</td>
+    <td align="center">99.99%</td>
+    <td align="center">99.99%</td>
     <td>99.99%</td>
   </tr>
   <tr>
