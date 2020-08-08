@@ -249,7 +249,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 
 ## References
-[1] ?
+[1] The MIT License | Open Source Initiative, 2020. [Online]. Available: https://opensource.org/licenses/MIT. [Accessed: 08-Aug-2020].
 
 [2] N. Savage, “How AI is improving cancer diagnostics,” Nature News, 25-Mar-2020. [Online]. Available: https://www.nature.com/articles/d41586-020-00847-2. [Accessed: 13-Jun-2020].
 
