@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 [![Python](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://colab.research.google.com/)
 
-![License](https://img.shields.io/github/license/justin13601/AICancer?style=flat-square)
+![License [1]](https://img.shields.io/github/license/justin13601/AICancer?style=flat-square)
 
 ***Disclaimer -*** This is purely an educational project. The information on this repository is not intended or implied to be a substitute for professional medical diagnoses. All content, including text, graphics, images and information, contained on or available through this repository is for educational purposes only.
 
