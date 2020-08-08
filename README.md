@@ -122,7 +122,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
   </tr>
   <tr>
     <td>CNN 2: Lung Benign vs. Malignant</td>
-    <td style="text-align:center">99.99%</td>
+    <td>99.99%</td>
     <td>99.5%</td>
     <td>99.3%</td>
   </tr>
