@@ -105,14 +105,40 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
 
 <table>
-    <tr>
-        <td>|       	| Training Accuracy 	| Validation Accuracy 	| Testing Accuracy 	|
-            |-------	|-------------------	|---------------------	|------------------	|
-            | CNN 1 	|                   	|                     	|                  	|
-            | CNN 2 	|                   	|                     	|                  	|
-            | CNN 3 	|                   	|                     	|                  	|
-            | CNN 4 	|                   	|                     	|                  	|</td>
-    </tr>
+<thead>
+  <tr>
+    <th></th>
+    <th>Training Accuracy</th>
+    <th>Validation Accuracy</th>
+    <th>Testing Accuracy</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>CNN 1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>CNN 2</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>CNN 3</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>CNN 4</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
 </table>
 <p align="center">
     <b>
