@@ -106,14 +106,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 <table>
     <tr>
-        <td>
-            |       	| Training Accuracy 	| Validation Accuracy 	| Testing Accuracy 	|
+        <td>|       	| Training Accuracy 	| Validation Accuracy 	| Testing Accuracy 	|
             |-------	|-------------------	|---------------------	|------------------	|
             | CNN 1 	|                   	|                     	|                  	|
             | CNN 2 	|                   	|                     	|                  	|
             | CNN 3 	|                   	|                     	|                  	|
-            | CNN 4 	|                   	|                     	|                  	|
-        </td>
+            | CNN 4 	|                   	|                     	|                  	|</td>
     </tr>
 </table>
 <p align="center">
