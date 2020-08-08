@@ -104,12 +104,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 ## Quantitative Results
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
 
-|       	| Training Accuracy 	| Validation Accuracy 	| Testing Accuracy 	|
-|-------	|-------------------	|---------------------	|------------------	|
-| CNN 1 	|                   	|                     	|                  	|
-| CNN 2 	|                   	|                     	|                  	|
-| CNN 3 	|                   	|                     	|                  	|
-| CNN 4 	|                   	|                     	|                  	|
+|       	                | Training Accuracy 	                | Validation Accuracy 	                | Testing Accuracy 	                |
+|-------	                |-------------------	                |---------------------	                |------------------	                |
+|           CNN 1           |                   	                |                     	                |                  	                |
+| CNN 2 	                |                   	                |                     	                |                  	                |
+| CNN 3 	                |                   	                |                     	                |                  	                |
+| CNN 4 	                |                   	                |                     	                |                  	                |
 <p align="center">
     <b>
         Table 2:
