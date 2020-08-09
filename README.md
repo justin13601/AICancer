@@ -69,7 +69,7 @@ Run start.py:
 
     python start.py
 
-Output:
+Console output:
 
     >>> Lung: Benign
     
