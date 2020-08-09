@@ -37,7 +37,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 - Uses PyTorch Library
 - 4 Convolutional Neural Net Models
 - Early Stopping via Checkpoint Files
-- Histogram Input in .jpeg or .png Format
+- Histopathological Images Input in .jpeg or .png Format
 - Classification of 5 Classes
 - Python 3.6.9
 
@@ -59,7 +59,7 @@ Install necessary packages:
 
     pip install -r requirements.txt
     
-Edit start.py to include histogram image path:
+Edit start.py to include histopathological image path:
 
     ...
     img = 'dataset\demo\lungn10.png'
