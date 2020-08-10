@@ -13,6 +13,8 @@ Inspired by our first APS360 lecture, in which we were shown a pigeon classifyin
 
 ***Disclaimer:*** This is purely an educational project. The information on this repository is not intended or implied to be a substitute for professional medical diagnoses. All content, including text, graphics, images and information, contained on or available through this repository is for educational purposes only.
 
+(3500 Words)
+
 
 ## Contents
 - [Overview](#overview)
@@ -67,10 +69,10 @@ We chose to classify lung and colon cells specifically as there is an abundance 
 
 ***Features:***
 - Uses PyTorch Library
-- 4 Convolutional Neural Net Models
+- 4 Convolutional Neural Network Models
 - Early Stopping via Checkpoint Files
 - Histopathological Images Input in .jpeg or .png Format
-- Classification of 5 Classes
+- Classification of 5 Cancer Cell Classes
 - Python 3.6.9
 
 
