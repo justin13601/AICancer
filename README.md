@@ -119,7 +119,7 @@ Console output:
 
 
 ## Project Illustration
-![Project Illustration](/meta_images/model_figure.jpg)
+![Project Illustration](/meta_images/model_figures.jpg)
 <p align="center">
     <b>
         Figure 1:
