@@ -62,6 +62,9 @@ The use of ML allows the cancer diagnosis process to be streamlined into a few s
     Benefits of Using ML for Cancer Cell Classification
 </p>
 
+We chose to classify lung and colon cells specifically as there is an abundance of histopathological cell data for these classes to train and test our model on. Doctors also may not be the ones to extract images from a patient and a classifier that is able to sort images by organ can help reduce misunderstanding in these cases. Further, it allows users to input multiple images in a batch (perhaps each from a different patient) without having to manually sort and remember organ types beforehand. Both organs can be affected by the same type of cancer, adenocarcinoma, which adds complexity to the problem. With an initial organ differentiation step, we hope to minimize these scenarios where cancer is diagnosed properly, but the organ is misclassified. With sufficient available data we would hope to expand classification to other organ types, however we believe the chosen classes illustrate the potential of ML in this situation.
+
+
 ***Features:***
 - Uses PyTorch Library
 - 4 Convolutional Neural Net Models
