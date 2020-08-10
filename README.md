@@ -20,7 +20,7 @@ Inspired by our first APS360 lecture, in which we were shown a pigeon classifyin
 - [Quick Start](#quick-start)
 - [Project Illustration](#project-illustration)
 - [Background & Related Work](#background--related-work)
-- [Data Processing](#data-processing)
+- [Data & Data Processing](#data--data-processing)
 - [Model Architectures](#model-architectures)
 - [Baseline Model](#baseline-model)
 - [Quantitative Results](#quantitative-results)
@@ -47,8 +47,8 @@ The use of ML allows the cancer diagnosis process to be streamlined into a few s
 </thead>
 <tbody>
   <tr>
-    <td><img src="/meta_images/doctor_with_ml.png" alt="WithML"></td>
-    <td><img src="/meta_images/doctor_without_ml.png" alt="WithoutML"></td>
+    <td><img src="/meta_images/doctor_with_ml.png" alt="With ML"></td>
+    <td><img src="/meta_images/doctor_without_ml.png" alt="Without ML"></td>
   </tr>
   <tr>
     <td colspan="2">· Allows batching of images<br>· Can get multiple diagnoses quickly<br>· Can provide a “second opinion” for doctors<br>· Anyone can use it (i.e. doesn’t have to be the imaging specialist or the doctor, could be an assistant)<br>· Automates a series of decision making into a one-input model<br>· Manual cell classification is done visually which convolutional filters can detect</td>
@@ -72,17 +72,6 @@ We chose to classify lung and colon cells specifically as there is an abundance 
 - Histopathological Images Input in .jpeg or .png Format
 - Classification of 5 Classes
 - Python 3.6.9
-
-***About the Original Dataset:***
-
-The dataset contains 25,000 histopathological images with 5 classes. All images are originally 768 x 768 pixels in size and are in jpeg file format. The images were generated from an original sample of HIPAA compliant and validated sources, consisting of 750 total images of lung tissue (250 benign lung tissue and 500 non-small cell lung cancer tissue (NSCLC): 250 lung adenocarcinomas, 250 lung squamous cell carcinomas) and 500 total images of colon tissue (250 benign colon tissue and 250 colon adenocarcinomas), and augmented to 25,000 using the Augmentor package.
-
-The follow are the 5 classes, each with 5,000 images:
-- Lung benign tissue
-- Lung adenocarcinoma (ACA)
-- Lung squamous cell carcinoma (SCC)
-- Colon adenocarcinoma
-- Colon benign tissue
 
 
 ## Dependencies
@@ -138,9 +127,26 @@ The benefits of an algorithm like this one are highly attractive because it offe
 Our project has a similar goal of using AI to make decisions about the presence of cancer in scans. The success of this breast cancer algorithm shows that machine learning is capable of completing this task with remarkable results. 
 
 
+## Data & Data Processing
+The data used is from Kaggle [4]. There are 5 classes of data: 2 colon types (benign and malignant: adenocarcinoma) and 3 lung types (benign, non-small cell lung cancer (NSCLC):  malignant - adenocarcinoma (ACA) and malignant - squamous cell carcinoma (SCC)).
 
-## Data Processing
-The data used is from Kaggle [4]. There are 5 classes of data: 2 colon types (benign and malignant: adenocarcinoma) and 3 lung types (benign, malignant: adenocarcinoma, and malignant: squamous cell carcinoma).
+![Data](/meta_images/data.png)
+
+This dataset consists of 250 images of each class, which were pre-augmented to 5000 of each class (total of 25 000 images) [4]. We normalized the pixel intensity of the images to the [0,1] range using transforms.Normalize(0.5,0.5,0.5). Images were resized to 224x224 pixels for consistency and to reduce load on our model. Finally, images were transformed to tensors.
+
+![Image Processing](/meta_images/image_processing.png)
+
+As the dataset used was heavily preprocessed beforehand, our main processing tasks were in splitting and sorting the data. Our classifier is made of 4 linked CNNs, so we needed to ensure that:
+1. Each CNN had an appropriate dataset for its classification job
+2. All CNNs had a balanced dataset
+3. All CNNs were trained on a subset of the same training set
+4. All CNNs were individually tested on a subset of the same testing set, which NONE of them had seen before
+5. The entire model of linked CNNs was completely tested on a new set that no individual CNN had seen before in training, validation, or individual testing
+
+To achieve this, we split the dataset into training, validation, individual testing, and overall testing sets with the ratio 70 : 15 : 7.5 : 7.5. We created individual model datasets from these, as shown below:
+
+![Data Split](/meta_images/data_split.png)
+
 
 ## Model Architectures
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
