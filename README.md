@@ -405,7 +405,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 
 ## References
-[1] S. Colic, Class Lecture, Topic: “Welcome to APS360: AI Fundamentals!.” APS360H1, Faculty of Applied Science and Engineering, University of Toronto, Toronto, May., 4, 2020
+[1] A. Szöllössi, “Pigeons classify breast cancer images,” BCC News, 20-Nov-2015. [Online]. Available: https://www.bbc.com/news/science-environment-34878151. [Accessed: 10-Aug-2020].
 
 [2] N. Savage, “How AI is improving cancer diagnostics,” Nature News, 25-Mar-2020. [Online]. Available: https://www.nature.com/articles/d41586-020-00847-2. [Accessed: 13-Jun-2020].
 
