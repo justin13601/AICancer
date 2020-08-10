@@ -167,7 +167,9 @@ To achieve this, we split the dataset into training, validation, individual test
 
 
 ## Model Architectures
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
+The architecture will consist of four separate binary CNNs that can be used in sequence or separately to categorize data. All CNNs will take in one preprocessed 224x224 square image and output either a zero or a one depending on the classification determined by the model. The first CNN will distinguish between lung and colon scans. If found to be a lung scan, the image will be passed into CNN #2 which will distinguish between malignant and benign lung cells. If found to be a colon scan, the image will be passed into CNN #3 which will distinguish between malignant and benign colon cells. The fourth CNN will be used in the case of malignant lung scans to classify the type of cancer detected to be either adenocarcinoma or squamous cell.
+
+The CNN architecture was chosen for its invariance properties [5]. Since there is a high level of variance between images, such as differences in cell size, orientation, location, and the amount of cells per image, we require a model that can identify more complex patterns that may be present [5]. 
 
 <table align="center">
 <thead>
@@ -225,6 +227,38 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
         Table 2:
     </b>
     Finalized Model Hyperparameters for Each Convolutional Neural Network
+</p>
+
+<p align="center"><img src="/meta_images/cnn1.png" alt="CNN #1 - Lung vs. Colon Architecture"></p>
+<p align="center">
+    <b>
+        Figure 5:
+    </b>
+    CNN #1 - Lung vs. Colon Architecture
+</p>
+
+<p align="center"><img src="/meta_images/cnn2.png" alt="CNN #2 - Lung Benign vs. Malignant Architecture"></p>
+<p align="center">
+    <b>
+        Figure 6:
+    </b>
+    CNN #2 - Lung Benign vs. Malignant Architecture
+</p>
+
+<p align="center"><img src="/meta_images/cnn3.png" alt="CNN #3 - Colon Benign vs. Malignant Architecture"></p>
+<p align="center">
+    <b>
+        Figure 7:
+    </b>
+    CNN #3 - Colon Benign vs. Malignant Architecture
+</p>
+
+<p align="center"><img src="/meta_images/cnn4.jpg" alt="CNN #4 - Lung Malignant SCC vs. ACA Architecture"></p>
+<p align="center">
+    <b>
+        Figure 8:
+    </b>
+    CNN #4 - Lung Malignant SCC vs. ACA Architecture
 </p>
 
 
