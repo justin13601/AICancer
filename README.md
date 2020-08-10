@@ -73,7 +73,7 @@ We chose to classify lung and colon cells specifically as there is an abundance 
 - Classification of 5 Classes
 - Python 3.6.9
 
-***About the Dataset:***
+***About the Original Dataset:***
 
 The dataset contains 25,000 histopathological images with 5 classes. All images are originally 768 x 768 pixels in size and are in jpeg file format. The images were generated from an original sample of HIPAA compliant and validated sources, consisting of 750 total images of lung tissue (250 benign lung tissue and 500 non-small cell lung cancer tissue (NSCLC): 250 lung adenocarcinomas, 250 lung squamous cell carcinomas) and 500 total images of colon tissue (250 benign colon tissue and 250 colon adenocarcinomas), and augmented to 25,000 using the Augmentor package.
 
@@ -140,8 +140,7 @@ Our project has a similar goal of using AI to make decisions about the presence 
 
 
 ## Data Processing
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
-
+The data used is from Kaggle [4]. There are 5 classes of data: 2 colon types (benign and malignant: adenocarcinoma) and 3 lung types (benign, malignant: adenocarcinoma, and malignant: squamous cell carcinoma).
 
 ## Model Architectures
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
