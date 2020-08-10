@@ -13,7 +13,7 @@ Inspired by our first APS360 lecture, in which we were shown a pigeon classifyin
 
 ***Disclaimer:*** This is purely an educational project. The information on this repository is not intended or implied to be a substitute for professional medical diagnoses. All content, including text, graphics, images and information, contained on or available through this repository is for educational purposes only.
 
-(3500 Words)
+(2500 Words)
 
 
 ## Contents
