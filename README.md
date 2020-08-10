@@ -334,7 +334,20 @@ CNN #1 - Error/Loss Training Curves | CNN #2 - Error/Loss Training Curves | CNN 
     Qualitative Sample Testing
 </p>
 
+<p align="center"><img src="/meta_images/detailed_results.png" alt="Overall Model Confusion Matrix Analysis"></p>
+* Cancer type correct but organ incorrectly classified.
+<p align="center">
+    <b>
+        Table 6:
+    </b>
+    Overall Model Confusion Matrix Analysis
+</p>
 
+Table 6 shows the model’s classification on the overall testing set, with 373 images of each class. 
+
+All diagonals on the matrix have values above 300, meaning the model has above 80% accuracy on each class. It performs the worst on benign colon scans, which we predicted from our individual sample testing, as CNN 3 did noticeably worse on classifying benign images. Further, the model classifies benign lung images the best. This makes sense as these images only go through CNN 1&2, both which had nearly perfect testing and sample accuracy.
+
+Benign colon scans are often classified as malignant which gives a high false positive rate for colon inputs and causes low accuracy. By comparison, benign lung scans are very rarely classified as malignant, and if they are, they are only classified as ACA. Conversely, only lung ACA cells are mistakenly classified as benign (false negative). Looking at samples of these images shows why: some lung ACA samples have red organelles, similar pink colours, and lots of negative space like benign images, whereas SCC images are overcrowded with dark blue/purple cells.
 
 
 ## Model Evaluation
