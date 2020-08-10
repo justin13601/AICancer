@@ -326,7 +326,15 @@ CNN #1 - Error/Loss Training Curves | CNN #2 - Error/Loss Training Curves | CNN 
 
 
 ## Qualitative Results
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
+<p align="center"><img src="/meta_images/sample_testing.png" alt="Qualitative Sample Testing"></p>
+<p align="center">
+    <b>
+        Table 5:
+    </b>
+    Qualitative Sample Testing
+</p>
+
+
 
 
 ## Model Evaluation
