@@ -131,10 +131,22 @@ Our project has a similar goal of using AI to make decisions about the presence 
 The data used is from Kaggle [4]. There are 5 classes of data: 2 colon types (benign and malignant: adenocarcinoma) and 3 lung types (benign, non-small cell lung cancer (NSCLC):  malignant - adenocarcinoma (ACA) and malignant - squamous cell carcinoma (SCC)).
 
 ![Data](/meta_images/data.png)
+<p align="center">
+    <b>
+        Figure 2:
+    </b>
+    Data Visualization - Example from Each Class
+</p>
 
 This dataset consists of 250 images of each class, which were pre-augmented to 5000 of each class (total of 25 000 images) [4]. We normalized the pixel intensity of the images to the [0,1] range using transforms.Normalize(0.5,0.5,0.5). Images were resized to 224x224 pixels for consistency and to reduce load on our model. Finally, images were transformed to tensors.
 
 ![Image Processing](/meta_images/image_processing.png)
+<p align="center">
+    <b>
+        Figure 3:
+    </b>
+    Data Visualization - Unprocessed vs. Processed
+</p>
 
 As the dataset used was heavily preprocessed beforehand, our main processing tasks were in splitting and sorting the data. Our classifier is made of 4 linked CNNs, so we needed to ensure that:
 1. Each CNN had an appropriate dataset for its classification job
@@ -145,7 +157,13 @@ As the dataset used was heavily preprocessed beforehand, our main processing tas
 
 To achieve this, we split the dataset into training, validation, individual testing, and overall testing sets with the ratio 70 : 15 : 7.5 : 7.5. We created individual model datasets from these, as shown below:
 
-![Data Split](/meta_images/data_split.png)
+![Data Split](/meta_images/data_split.jpg)
+<p align="center">
+    <b>
+        Figure 4:
+    </b>
+    Data Split
+</p>
 
 
 ## Model Architectures
