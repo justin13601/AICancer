@@ -268,7 +268,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 
 ## Quantitative Results
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
+
+<p align="center"><img src="/meta_images/detailed_results.png" alt="Overall Model Confusion Matrix Analysis"></p>
+<p align="center">
+    <b>
+        Table 3:
+    </b>
+    Overall Model Confusion Matrix Analysis
+</p>
 
 <table align="center">
 <thead>
@@ -308,7 +315,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 </table>
 <p align="center">
     <b>
-        Table 3:
+        Table 4:
     </b>
     Training, Validation, & Testing Accuracies for Each Convolutional Neural Network
 </p>
@@ -320,7 +327,7 @@ CNN #1 - Error/Loss Training Curves | CNN #2 - Error/Loss Training Curves | CNN 
 ![CNN1](/meta_images/training_curve_cnn1.png)  |  ![CNN2](/meta_images/training_curve_cnn2.png)  |  ![CNN3](/meta_images/training_curve_cnn3.png) | ![CNN4](/meta_images/training_curve_cnn4.png)
 <p align="center">
     <b>
-        Table 4:
+        Table 5:
     </b>
     Error/Loss Training Curves for Each Convolutional Neural Network
 </p>
@@ -330,20 +337,12 @@ CNN #1 - Error/Loss Training Curves | CNN #2 - Error/Loss Training Curves | CNN 
 <p align="center"><img src="/meta_images/sample_testing.png" alt="Qualitative Sample Testing"></p>
 <p align="center">
     <b>
-        Table 5:
+        Table 6:
     </b>
     Qualitative Sample Testing
 </p>
 
-<p align="center"><img src="/meta_images/detailed_results.png" alt="Overall Model Confusion Matrix Analysis"></p>
-<p align="center">
-    <b>
-        Table 6:
-    </b>
-    Overall Model Confusion Matrix Analysis
-</p>
-
-Table 6 shows the model’s classification on the overall testing set, with 373 images of each class. 
+Table 3 shows the model’s classification on the overall testing set, with 373 images of each class. 
 
 All diagonals on the matrix have values above 300, meaning the model has above 80% accuracy on each class. It performs the worst on benign colon scans, which we predicted from our individual sample testing, as CNN 3 did noticeably worse on classifying benign images. Further, the model classifies benign lung images the best. This makes sense as these images only go through CNN 1&2, both which had nearly perfect testing and sample accuracy.
 
