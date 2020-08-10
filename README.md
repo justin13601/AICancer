@@ -334,7 +334,7 @@ CNN #1 - Error/Loss Training Curves | CNN #2 - Error/Loss Training Curves | CNN 
     Qualitative Sample Testing
 </p>
 
-<p align="center"><img src="/meta_images/detailed_results.png" alt="Overall Model Confusion Matrix Analysis" width="600" height="504"></p>
+<p align="center"><img src="/meta_images/detailed_results.png" alt="Overall Model Confusion Matrix Analysis"></p>
 <p align="center">
     <b>
         Table 6:
