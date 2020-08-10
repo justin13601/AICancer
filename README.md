@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 [![Python](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://colab.research.google.com/)
 
-![License [1]](https://img.shields.io/github/license/justin13601/AICancer) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/justin13601/AICancer.git/master?filepath=%2Fipynb_testing%2FProject_Notebook.ipynb)
+![License](https://img.shields.io/github/license/justin13601/AICancer) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/justin13601/AICancer.git/master?filepath=%2Fipynb_testing%2FProject_Notebook.ipynb)
 
 
 ***Disclaimer -*** This is purely an educational project. The information on this repository is not intended or implied to be a substitute for professional medical diagnoses. All content, including text, graphics, images and information, contained on or available through this repository is for educational purposes only.
@@ -34,7 +34,29 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 
 ## Overview
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum.
+The current lung and colon cancer diagnosis process requires a doctor to take multiple steps in testing, consulting lung and colon specialists, and receiving secondary opinions before arriving at a complete diagnosis. In our project, a user would acquire and input a histopathological lung or colon image into the model and receive a full diagnosis of cell type, cancerous status, and type of malignancy if applicable. 
+
+The use of ML allows the cancer diagnosis process to be streamlined into a few simple steps, in which intermediate diagnoses are automated and gives one final output diagnosis. Further, multiple patient diagnoses can be received at once through image batching. Users also do not have to be a doctor; they can be assistants or imaging specialists who relay the output to the primary doctor to analyze. As such, our model acts as a ‘second opinion’ for medical professionals.
+
+<table>
+<thead>
+  <tr>
+    <th>Steps Taken by Medical Professional using ML</th>
+    <th>Steps Taken by Medical Professional without ML</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Blank</td>
+    <td>Blank</td>
+  </tr>
+  <tr>
+    <td colspan="2">· Allows batching of images<br>· Can get multiple diagnoses quickly<br>· Can provide a “second opinion” for doctors<br>· Anyone can use it (i.e. doesn’t have to be the imaging specialist or the doctor, could be an assistant)<br>· Automates a series of decision making into a one-input model<br>· Manual cell classification is done visually which convolutional filters can detect</td>
+  </tr>
+</tbody>
+</table>
+
+***Features:***
 - Uses PyTorch Library
 - 4 Convolutional Neural Net Models
 - Early Stopping via Checkpoint Files
@@ -159,7 +181,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 </table>
 <p align="center">
     <b>
-        Table 1:
+        Table 2:
     </b>
     Finalized Model Hyperparameters for Each Convolutional Neural Network
 </p>
@@ -210,7 +232,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 </table>
 <p align="center">
     <b>
-        Table 2:
+        Table 3:
     </b>
     Training, Validation, & Testing Accuracies for Each Convolutional Neural Network
 </p>
@@ -222,7 +244,7 @@ CNN #1 - Error/Loss Training Curves | CNN #2 - Error/Loss Training Curves | CNN 
 ![CNN1](/meta_images/training_curve_cnn1.png)  |  ![CNN2](/meta_images/training_curve_cnn2.png)  |  ![CNN3](/meta_images/training_curve_cnn3.png) | ![CNN4](/meta_images/training_curve_cnn4.png)
 <p align="center">
     <b>
-        Table 3:
+        Table 4:
     </b>
     Error/Loss Training Curves for Each Convolutional Neural Network
 </p>
@@ -259,7 +281,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 
 ## References
-[1] The MIT License | Open Source Initiative, 2020. [Online]. Available: https://opensource.org/licenses/MIT. [Accessed: 08-Aug-2020].
+[1] 
 
 [2] N. Savage, “How AI is improving cancer diagnostics,” Nature News, 25-Mar-2020. [Online]. Available: https://www.nature.com/articles/d41586-020-00847-2. [Accessed: 13-Jun-2020].
 
