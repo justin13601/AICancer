@@ -335,7 +335,6 @@ CNN #1 - Error/Loss Training Curves | CNN #2 - Error/Loss Training Curves | CNN 
 </p>
 
 <p align="center"><img src="/meta_images/detailed_results.png" alt="Overall Model Confusion Matrix Analysis"></p>
-* Cancer type correct but organ incorrectly classified.
 <p align="center">
     <b>
         Table 6:
