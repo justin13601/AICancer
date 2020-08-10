@@ -47,8 +47,8 @@ The use of ML allows the cancer diagnosis process to be streamlined into a few s
 </thead>
 <tbody>
   <tr>
-    <td>![WithML](/meta_images/doctor_with_ml.png)</td>
-    <td>![WithoutML](/meta_images/doctor_without_ml.png)</td>
+    <td><img src="/meta_images/doctor_with_ml.png" alt="WithML"></td>
+    <td><img src="/meta_images/doctor_without_ml.png" alt="WithoutML"></td>
   </tr>
   <tr>
     <td colspan="2">· Allows batching of images<br>· Can get multiple diagnoses quickly<br>· Can provide a “second opinion” for doctors<br>· Anyone can use it (i.e. doesn’t have to be the imaging specialist or the doctor, could be an assistant)<br>· Automates a series of decision making into a one-input model<br>· Manual cell classification is done visually which convolutional filters can detect</td>
