@@ -130,7 +130,7 @@ Our project has a similar goal of using AI to make decisions about the presence 
 ## Data & Data Processing
 The data used is from Kaggle [4]. There are 5 classes of data: 2 colon types (benign and malignant: adenocarcinoma) and 3 lung types (benign, non-small cell lung cancer (NSCLC):  malignant - adenocarcinoma (ACA) and malignant - squamous cell carcinoma (SCC)).
 
-![Data](/meta_images/data.png)
+<img align="center" src="/meta_images/data.png" alt="Data Visualization - Example from Each Class">
 <p align="center">
     <b>
         Figure 2:
@@ -140,7 +140,7 @@ The data used is from Kaggle [4]. There are 5 classes of data: 2 colon types (be
 
 This dataset consists of 250 images of each class, which were pre-augmented to 5000 of each class (total of 25 000 images) [4]. We normalized the pixel intensity of the images to the [0,1] range using transforms.Normalize(0.5,0.5,0.5). Images were resized to 224x224 pixels for consistency and to reduce load on our model. Finally, images were transformed to tensors.
 
-![Image Processing](/meta_images/image_processing.png)
+<img align="center" src="/meta_images/image_processing.png" alt="Data Visualization - Unprocessed vs. Processed">
 <p align="center">
     <b>
         Figure 3:
@@ -157,12 +157,12 @@ As the dataset used was heavily preprocessed beforehand, our main processing tas
 
 To achieve this, we split the dataset into training, validation, individual testing, and overall testing sets with the ratio 70 : 15 : 7.5 : 7.5. We created individual model datasets from these, as shown below:
 
-![Data Split](/meta_images/data_split.jpg)
+<img align="center" src="/meta_images/data_split.jpg" alt="Data Split per Model">
 <p align="center">
     <b>
         Figure 4:
     </b>
-    Data Split
+    Data Split per Model
 </p>
 
 
@@ -184,12 +184,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 <tbody>
   <tr>
     <td>CNN 1: Lung vs. Colon</td>
-    <td align="center">Blank</td>
-    <td align="center">Blank</td>
-    <td align="center">Blank</td>
-    <td align="center">Blank</td>
-    <td align="center">Blank</td>
-    <td align="center">Blank</td>
+    <td align="center">256</td>
+    <td align="center">0.001</td>
+    <td align="center">14</td>
+    <td align="center">2</td>
+    <td align="center">2</td>
+    <td align="center">2</td>
   </tr>
   <tr>
     <td>CNN 2: Lung Benign vs. Malignant</td>
@@ -202,12 +202,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
   </tr>
   <tr>
     <td>CNN 3: Colon Benign vs. Malignant</td>
-    <td align="center">Blank</td>
-    <td align="center">Blank</td>
-    <td align="center">Blank</td>
-    <td align="center">Blank</td>
-    <td align="center">Blank</td>
-    <td align="center">Blank</td>
+    <td align="center">256</td>
+    <td align="center">0.001</td>
+    <td align="center">14</td>
+    <td align="center">2</td>
+    <td align="center">2</td>
+    <td align="center">2</td>
   </tr>
   <tr>
     <td>CNN 4: Lung SCC vs. ACA</td>
