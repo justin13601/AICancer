@@ -372,7 +372,7 @@ The final interesting result from our model is that while the lung vs colon clas
 "></p>
 <p align="center">
     <b>
-        Figure 9:
+        Figure 10:
     </b>
     Data Visualization - Lung ACA Sample vs. Colon ACA Sample.png
 </p>
@@ -405,7 +405,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 
 
 ## References
-[1] 
+[1] S. Colic, Class Lecture, Topic: “Welcome to APS360: AI Fundamentals!.” APS360H1, Faculty of Applied Science and Engineering, University of Toronto, Toronto, May., 4, 2020
 
 [2] N. Savage, “How AI is improving cancer diagnostics,” Nature News, 25-Mar-2020. [Online]. Available: https://www.nature.com/articles/d41586-020-00847-2. [Accessed: 13-Jun-2020].
 
