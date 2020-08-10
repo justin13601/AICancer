@@ -4,7 +4,7 @@
 ---------  
 # AICancer or CaNNcer or think of a name
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
+Inspired by our first APS360 lecture, in which we were shown a pigeon classifying cancer cells [1], we designed a project to use machine learning (ML) to classify complex cancer histopathological images. NAME is an algorithm that differentiates between 5 classes of cancer images - first between colon and lung cell images, then between malignant and benign cells within these categories, and then finally into specific types of malignant cells.
 
 [![Python](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://colab.research.google.com/)
 
