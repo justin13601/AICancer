@@ -38,23 +38,29 @@ The current lung and colon cancer diagnosis process requires a doctor to take mu
 
 The use of ML allows the cancer diagnosis process to be streamlined into a few simple steps, in which intermediate diagnoses are automated and gives one final output diagnosis. Further, multiple patient diagnoses can be received at once through image batching. Users also do not have to be a doctor; they can be assistants or imaging specialists who relay the output to the primary doctor to analyze. As such, our model acts as a ‘second opinion’ for medical professionals.
 
-<table>
+<table align="center">
 <thead>
   <tr>
-    <th>Steps Taken by Medical Professional using ML</th>
-    <th>Steps Taken by Medical Professional without ML</th>
+    <th align="center">Steps Taken by Medical Professional using ML</th>
+    <th align="center">Steps Taken by Medical Professional without ML</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>Blank</td>
-    <td>Blank</td>
+    <td>![WithML](/meta_images/doctor_with_ml.png)</td>
+    <td>![WithoutML](/meta_images/doctor_without_ml.png)</td>
   </tr>
   <tr>
     <td colspan="2">· Allows batching of images<br>· Can get multiple diagnoses quickly<br>· Can provide a “second opinion” for doctors<br>· Anyone can use it (i.e. doesn’t have to be the imaging specialist or the doctor, could be an assistant)<br>· Automates a series of decision making into a one-input model<br>· Manual cell classification is done visually which convolutional filters can detect</td>
   </tr>
 </tbody>
 </table>
+<p align="center">
+    <b>
+        Table 1:
+    </b>
+    Benefits of Using ML for Cancer Cell Classification
+</p>
 
 ***Features:***
 - Uses PyTorch Library
