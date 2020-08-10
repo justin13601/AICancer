@@ -108,8 +108,8 @@ Console output:
 
 
 ## Project Illustration
-![Project Illustration](/meta_images/model_figures.jpg)
 <p align="center">
+    <img src="/meta_images/model_figures.jpg" alt="Project Illustration - Model Figures">
     <b>
         Figure 1:
     </b>
@@ -130,8 +130,8 @@ Our project has a similar goal of using AI to make decisions about the presence 
 ## Data & Data Processing
 The data used is from Kaggle [4]. There are 5 classes of data: 2 colon types (benign and malignant: adenocarcinoma) and 3 lung types (benign, non-small cell lung cancer (NSCLC):  malignant - adenocarcinoma (ACA) and malignant - squamous cell carcinoma (SCC)).
 
-<img class="center" src="/meta_images/data.png" alt="Data Visualization - Example from Each Class">
 <p align="center">
+    <img src="/meta_images/data.png" alt="Data Visualization - Example from Each Class">
     <b>
         Figure 2:
     </b>
@@ -140,8 +140,8 @@ The data used is from Kaggle [4]. There are 5 classes of data: 2 colon types (be
 
 This dataset consists of 250 images of each class, which were pre-augmented to 5000 of each class (total of 25 000 images) [4]. We normalized the pixel intensity of the images to the [0,1] range using transforms.Normalize(0.5,0.5,0.5). Images were resized to 224x224 pixels for consistency and to reduce load on our model. Finally, images were transformed to tensors.
 
-<img class="center" src="/meta_images/image_processing.png" alt="Data Visualization - Unprocessed vs. Processed">
 <p align="center">
+    <img src="/meta_images/image_processing.png" alt="Data Visualization - Unprocessed vs. Processed">
     <b>
         Figure 3:
     </b>
@@ -157,8 +157,8 @@ As the dataset used was heavily preprocessed beforehand, our main processing tas
 
 To achieve this, we split the dataset into training, validation, individual testing, and overall testing sets with the ratio 70 : 15 : 7.5 : 7.5. We created individual model datasets from these, as shown below:
 
-<img class="center" src="/meta_images/data_split.jpg" alt="Data Split per Model">
 <p align="center">
+    <img src="/meta_images/data_split.jpg" alt="Data Split per Model">
     <b>
         Figure 4:
     </b>
