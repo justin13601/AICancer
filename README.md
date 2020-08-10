@@ -348,6 +348,35 @@ All diagonals on the matrix have values above 300, meaning the model has above 8
 
 Benign colon scans are often classified as malignant which gives a high false positive rate for colon inputs and causes low accuracy. By comparison, benign lung scans are very rarely classified as malignant, and if they are, they are only classified as ACA. Conversely, only lung ACA cells are mistakenly classified as benign (false negative). Looking at samples of these images shows why: some lung ACA samples have red organelles, similar pink colours, and lots of negative space like benign images, whereas SCC images are overcrowded with dark blue/purple cells.
 
+<p align="center"><img src="/meta_images/dark_imgs.png" alt="Data Visualization: Lung Samples"></p>
+<p align="center">
+    <b>
+        Figure 9:
+    </b>
+    Data Visualization - Lung Samples
+</p>
+
+Lung malignant sub-types are mistaken often, but it is more likely to classify SCC images as ACA. From the above image, one can see some similar features of these two samples. This is even clearer when we look at samples such as lungaca1123, where there is overcrowding and little negative space:
+
+<p align="center"><img src="/meta_images/lungaca1123.png" alt="Data Visualization - lungaca1123.png"></p>
+<p align="center">
+    <b>
+        Figure 9:
+    </b>
+    Data Visualization - lungaca1123.png
+</p>
+
+The final interesting result from our model is that while the lung vs colon classification is nearly perfect, it only failed in classifying colon ACA as lung ACA. This is interesting as colon and lung cells look very different in general, but when looking at some samples, we see that images that do not have defined cell edges look very similar to each other. As the converse isn’t true, there must be some features in colon ACA cells that resemble a lung cell. Overall, we see that lung ACA samples have a variety of features, some of which resemble those of other sub-types, which makes overall classification much more difficult.
+
+<p align="center"><img src="/meta_images/lungaca_vs_colonca.png" alt="Data Visualization - Lung ACA Sample vs. Colon ACA Sample.png
+"></p>
+<p align="center">
+    <b>
+        Figure 9:
+    </b>
+    Data Visualization - Lung ACA Sample vs. Colon ACA Sample.png
+</p>
+
 
 ## Model Evaluation
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
