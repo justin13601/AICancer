@@ -141,7 +141,9 @@ The data used is from Kaggle [4]. There are 5 classes of data: 2 colon types (be
 This dataset consists of 250 images of each class, which were pre-augmented to 5000 of each class (total of 25 000 images) [4]. We normalized the pixel intensity of the images to the [0,1] range using transforms.Normalize(0.5,0.5,0.5). Images were resized to 224x224 pixels for consistency and to reduce load on our model. Finally, images were transformed to tensors.
 
 <p align="center">
-    <b><img src="/meta_images/image_processing.png" alt="Data Visualization - Unprocessed vs. Processed"></b>
+    <b><img src="/meta_images/image_processing.png" alt="Data Visualization - Unprocessed vs. Processed">
+  
+  </b>
     <b>
         Figure 3:
     </b>
