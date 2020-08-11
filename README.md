@@ -59,7 +59,7 @@ Console output:
     >>> Lung: Benign
     
 
-(2491 Words)
+(2479 Words)
 
 
 ## Contents
@@ -269,7 +269,7 @@ Each CNN was trained, validated and tested using code adapted from APS360 Lab 2 
 
 ## Baseline Model
 
-A Random Forests Classifier was the selected baseline. 1,000 estimators were used to train over 7,000 images from the training set. Next, 1,000 images were taken from the validation set and run through the classifier. The model achieved an 80.6% accuracy. This model showed several weaknesses, including classifying 19.7% of colon ACA images as benign, and classifying 25.0% of lung SCC images as lung ACA. Overall, differentiation between the two cancerous lung subtypes was often confused, and high false negative rates makes this model unsuitable for use.
+A Random Forests Classifier was the selected baseline [12]. 1,000 estimators were used to train over 7,000 images from the training set. Next, 1,000 images were taken from the validation set and run through the classifier. The model achieved an 80.6% accuracy. This model showed several weaknesses, including classifying 19.7% of colon ACA images as benign, and classifying 25.0% of lung SCC images as lung ACA. Overall, differentiation between the two cancerous lung subtypes was often confused, and high false negative rates makes this model unsuitable for use.
 
 <p align="center"><img src="/meta_images/baseline_matrix.png" alt="Baseline Model Confusion Matrix Analysis"></p>
 <p align="center">
@@ -487,4 +487,6 @@ Ultimately, there is no doubt that we are still long ways away from being solely
 
 [10] J. Voigt, “The Future of Artificial Intelligence in Medicine,” Wharton Magazing. [Online]. Available: https://magazine.wharton.upenn.edu/digital/the-future-of-artificial-intelligence-in-medicine/. [Accessed: 10-Aug-2020].
 
-[11] "Lab_2_Cats_vs_Dogs," APS360, Faculty of Applied Science and Engineering, University of Toronto, Toronto, summer 2020. [.ipynb file]. Available: https://q.utoronto.ca/courses/155423/files/7477635/download?download_frd=1
+[11] "Lab_2_Cats_vs_Dogs," APS360, Faculty of Applied Science and Engineering, University of Toronto, Toronto, summer 2020. [.ipynb file]. Available: https://q.utoronto.ca/courses/155423/files/7477635/download?download_frd=1.
+
+[12] F. Boyles, "Using Random Forests in Python with Scikit-Learn," Oxford Protein Informatics Group, 26-Jul-2017. [Online]. Available: https://www.blopig.com/blog/2017/07/using-random-forests-in-python-with-scikit-learn/. [Accessed: 10-July-2020].
