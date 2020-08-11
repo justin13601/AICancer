@@ -46,7 +46,7 @@ Console output:
     >>> Lung: Benign
     
 
-(2497 Words)
+(2491 Words)
 
 
 ## Contents
@@ -117,7 +117,7 @@ We chose to classify lung and colon cells as there is an abundance of data to tr
 
 
 ## Background & Related Work
-ML is an evolving technology that is proving to be increasingly useful in cancer diagnosis. Algorithms are being created for some of the most common forms of the disease: brain cancer, prostate cancer, breast cancer, lung cancer, bone cancer, skin cancer and more [2].
+ML is an evolving technology that is proving to be increasingly useful in cancer diagnosis. Algorithms are being created for some of the most common forms of the disease: brain, prostate, breast, lung, bone, skin and more [2].
 
 Most recently, a new project received praise for its ability to detect cancerous tumours extremely effectively [3]. The initiative was led by Google Health and Imperial College London in an effort to use technology to enhance breast cancer screening methods [3]. The algorithm was created using a sample set of 29,000 mammograms, and was tested against the judgement of professional radiologists [3]. When verified against one radiologist, the effectiveness of the algorithm was proven to be better, on par with a two-person team [3]. 
 
