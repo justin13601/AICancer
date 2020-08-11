@@ -342,7 +342,7 @@ Drawbacks include a tendency to give a false positive result on colon images. Th
 Additionally, the model occasionally confused the cancerous lung subtypes, although significantly less frequently than the baseline model. This could require the doctor to consult with a specialist or lead the patient to pursue a treatment which is not appropriate. This is why this model is only intended to be used with a doctor at this stage; although the results obtained are very favourable, it is not a replacement for a medical professional.
 
 CNN #1 - Error/Loss Training Curves | CNN #2 - Error/Loss Training Curves | CNN #3 - Error/Loss Training Curves | CNN #4 - Error/Loss Training Curves 
-:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+:----------------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 ![CNN1](/meta_images/training_curve_cnn1.png)  |  ![CNN2](/meta_images/training_curve_cnn2.png)  |  ![CNN3](/meta_images/training_curve_cnn3.png) | ![CNN4](/meta_images/training_curve_cnn4.png)
 <p align="center">
     <b>
