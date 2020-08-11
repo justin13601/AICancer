@@ -46,7 +46,7 @@ Console output:
     >>> Lung: Benign
     
 
-(2486 Words)
+(2497 Words)
 
 
 ## Contents
