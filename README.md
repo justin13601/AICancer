@@ -13,6 +13,39 @@ Inspired by our first APS360 lecture, in which we were shown a pigeon classifyin
 
 ***Disclaimer:*** This is purely an educational project. The information on this repository is not intended or implied to be a substitute for professional medical diagnoses. All content, including text, graphics, images and information, contained on or available through this repository is for educational purposes only.
 
+
+## Dependencies
+- NumPy
+- PyTorch
+- Matplotlib
+- Kaggle
+- Split-folders
+- Torchsummary
+- Torchvision
+- Pillow
+
+
+## Quick Start
+
+Install necessary packages:
+
+    pip install -r requirements.txt
+    
+Edit start.py to include histopathological image path:
+
+    ...
+    img = 'dataset\demo\lungn10.png'
+    ...
+    
+Run start.py:
+
+    python start.py
+
+Console output:
+
+    >>> Lung: Benign
+    
+
 (2486 Words)
 
 
@@ -73,39 +106,6 @@ We chose to classify lung and colon cells as there is an abundance of data to tr
 - Histopathological Images Input in .jpeg or .png Format
 - Classification of 5 Cancer Cell Classes
 - Python 3.6.9
-
-
-## Dependencies
-- NumPy
-- PyTorch
-- Matplotlib
-- Kaggle
-- Split-folders
-- Torchsummary
-- Torchvision
-- Pillow
-
-
-## Quick Start
-
-Install necessary packages:
-
-    pip install -r requirements.txt
-    
-Edit start.py to include histopathological image path:
-
-    ...
-    img = 'dataset\demo\lungn10.png'
-    ...
-    
-Run start.py:
-
-    python start.py
-
-Console output:
-
-    >>> Lung: Benign
-    
 
 
 ## Project Illustration
