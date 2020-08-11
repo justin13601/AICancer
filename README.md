@@ -174,6 +174,8 @@ The architecture consists of four separate binary CNNs. All CNNs take in one pre
 
 The CNN architecture was chosen for its invariance properties [5]. Since there is a high level of variance between images, such as differences in cell size, orientation, location, and the amount of cells per image, we require a model that can identify more complex patterns that may be present [5]. 
 
+Each CNN was trained, validated and tested using code adapted from APS360 Lab 2 [11].
+
 <table align="center">
 <thead>
   <tr>
@@ -484,3 +486,5 @@ Ultimately, there is no doubt that we are still long ways away from being solely
 [9]	Memorang, “Colon Cancer (MCC Exam #3) Flashcards,” Memorang. [Online]. Available: https://www.memorangapp.com/flashcards/92659/Colon_Cancer/. [Accessed: 10-Aug-2020].
 
 [10] J. Voigt, “The Future of Artificial Intelligence in Medicine,” Wharton Magazing. [Online]. Available: https://magazine.wharton.upenn.edu/digital/the-future-of-artificial-intelligence-in-medicine/. [Accessed: 10-Aug-2020].
+
+[11] "Lab_2_Cats_vs_Dogs," APS360, Faculty of Applied Science and Engineering, University of Toronto, Toronto, summer 2020. [.ipynb file]. Available: https://q.utoronto.ca/courses/155423/files/7477635/download?download_frd=1
