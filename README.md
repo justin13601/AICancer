@@ -52,7 +52,7 @@ ML streamlines the process by automating intermediate steps to give one complete
     <td><img src="/meta_images/doctor_without_ml.png" alt="Without ML"></td>
   </tr>
   <tr>
-    <td colspan="2">· Allows batching of images<br>· Can get multiple diagnoses quickly<br>· Can provide a “second opinion” for doctors<br>· Anyone can use it (i.e. doesn’t have to be the imaging specialist or the doctor, could be an assistant)<br>· Automates a series of decision making into a one-input model<br>· Manual cell classification is done visually which convolutional filters can detect</td>
+    <td colspan="2">· Allows batching of images<br>· Can get multiple diagnoses quickly<br>· Can provide a “second opinion” for doctors<br>· Automates a series of decision making into a one-input model<br>· Manual cell classification is done visually which convolutional filters can detect</td>
   </tr>
 </tbody>
 </table>
@@ -290,8 +290,6 @@ Performance of the model was reasonably good overall, with optimal results in lu
 
 The accuracies of the more general convolutional neural networks (CNN 1 and CNN 2) are very high, and most error occurred in the periphery CNNs (CNN 3 and CNN 4). This ensured that minimal error propagation occurred.
 
-False negative results for both colon and lung were also low, indicating that the model would rarely ignore a cancerous scan. This is important, as false negative results could potentially cause the patient to have a false sense of security, and result in them seeking treatment much later when the cancer is much more serious. Our model avoids this crucial error.
-
 <table align="center">
 <thead>
   <tr>
@@ -334,6 +332,9 @@ False negative results for both colon and lung were also low, indicating that th
     </b>
     Training, Validation, & Testing Accuracies for Each Convolutional Neural Network
 </p>
+
+
+False negative results for both colon and lung were also low, indicating that the model would rarely ignore a cancerous scan. This is important, as false negative results could potentially cause the patient to have a false sense of security, and result in them seeking treatment much later when the cancer is much more serious. Our model avoids this crucial error.
 
 Drawbacks include a tendency to give a false positive result on colon images. The model frequently misdiagnosed healthy colon scans as having cancer. This could result in a healthy patient getting an additional scan or biopsy, which could be expensive or uncomfortable. Although this is less serious than false negative classification, it could have detrimental effects.
 
