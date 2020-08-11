@@ -288,9 +288,9 @@ A Random Forests Classifier was the selected baseline. 1,000 estimators were use
     Overall Model Confusion Matrix Analysis
 </p>
 
-Performance of the model was reasonably good overall, with optimal results in lung benign, lung adenocarcinoma and colon adenocarcinoma scan classes. The overall model accuracy was 91.05%. The model had low error in differentiating lung and colon images. Accuracy between lung malignant and benign was also high. Since individual CNNs were used for each step of the classification process, each one had different hyperparameters and architecture that best fit the classification job.
+Performance of the model was reasonably good overall, with optimal results in lung benign, lung adenocarcinoma and colon adenocarcinoma scan classes. The overall model accuracy was 91.05%. The model had low error in differentiating lung and colon images. Accuracy between lung malignant and benign was also high. Since individual CNNs were used for each step of the classification process, each one had hyperparameters and architecture that best fit the classification job.
 
-The accuracies of the more general convolutional neural networks (CNN #1 and CNN #2) are very high, and most error occurred in the periphery CNNs (CNN #3 and CNN #4). This ensured that minimal error propagation occurred.
+The accuracies of the more general convolutional neural networks (CNN #1 and CNN #2) are very high. Most error occurred in the periphery CNNs (CNN #3 and CNN #4). This ensured that minimal error propagation occurred.
 
 <table align="center">
 <thead>
@@ -336,11 +336,11 @@ The accuracies of the more general convolutional neural networks (CNN #1 and CNN
 </p>
 
 
-False negative results for both colon and lung were also low, indicating that the model would rarely ignore a cancerous scan. This is important, as false negative results could potentially cause the patient to have a false sense of security, and result in them seeking treatment much later when the cancer is much more serious. Our model avoids this crucial error.
+False negative results for both colon and lung were also low, indicating that the model would rarely ignore a cancerous scan. This is important, as false negative results could potentially cause the patient to seek treatment much later when the cancer is more serious. Our model avoids this crucial error.
 
 Drawbacks include a tendency to give a false positive result on colon images. The model frequently misdiagnosed healthy colon scans as having cancer. This could result in a healthy patient getting an additional scan or biopsy, which could be expensive or uncomfortable. Although this is less serious than false negative classification, it could have detrimental effects.
 
-Additionally, the model occasionally confused the cancerous lung subtypes, although significantly less frequently than the baseline model. This could require the doctor to consult with a specialist or lead the patient to pursue a treatment which is not appropriate. This is why this model is only intended to be used with a doctor at this stage; although the results obtained are very favourable, it is not a replacement for a medical professional.
+Additionally, the model occasionally confused the cancerous lung subtypes, although significantly less frequently than the baseline model. This could potentially lead the patient to pursue a treatment which is not appropriate. This is why this model is only intended to be used with a doctor at this stage; although the results obtained are very favourable, it is not a replacement for a medical professional.
 
 CNN #1 - Error/Loss Training Curves | CNN #2 - Error/Loss Training Curves | CNN #3 - Error/Loss Training Curves | CNN #4 - Error/Loss Training Curves 
 :----------------------------------:|:-----------------------------------:|:-----------------------------------:|:----------------------------------:
