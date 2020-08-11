@@ -59,7 +59,7 @@ Console output:
     >>> Lung: Benign
     
 
-(2479 Words)
+(2498 Words)
 
 
 ## Contents
@@ -172,7 +172,7 @@ To achieve this, we split the dataset into training, validation, individual test
 ## Model Architectures
 The architecture consists of four separate binary CNNs. All CNNs take in one preprocessed 224x224 square image and output either a zero or a one depending on the classification determined by the model. The first CNN distinguishes between lung and colon scans. If found to be a lung scan, the image is passed into CNN #2 which distinguishes between malignant and benign lung cells. If found to be a colon scan, the image is passed into CNN #3 which distinguishes between malignant and benign colon cells. The fourth CNN is used to classify the type of lung cancer: adenocarcinoma or squamous cell.
 
-The CNN architecture was chosen for its invariance properties [5]. Since there is a high level of variance between images, such as differences in cell size, orientation, location, and the amount of cells per image, we require a model that can identify more complex patterns that may be present [5]. 
+The CNN architecture was chosen for its invariance properties [5]. Since there is a high level of variance between images, such as differences in cell size, orientation and location, we require a model that can identify more complex patterns that may be present [5]. 
 
 Each CNN was trained, validated and tested using code adapted from APS360 Lab 2 [11].
 
