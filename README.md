@@ -51,8 +51,6 @@ Console output:
 
 ## Contents
 - [Overview](#overview)
-- [Dependencies](#dependencies)
-- [Quick Start](#quick-start)
 - [Project Illustration](#project-illustration)
 - [Background & Related Work](#background--related-work)
 - [Data & Data Processing](#data--data-processing)
