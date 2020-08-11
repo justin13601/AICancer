@@ -17,7 +17,7 @@ Inspired by our first APS360 lecture, in which we were shown a pigeon classifyin
 - https://github.com/justin13601
 - https://github.com/TE-Harrison
 
-***Disclaimer:** This is a purely educational project. The information in this repository is not intended or implied to be a substitute for professional medical diagnoses. All content, including text, graphics, images and information, contained in or available through this repository is for educational purposes only.*
+***Disclaimer:** This is purely an educational project. The information in this repository is not intended or implied to be a substitute for professional medical diagnoses. All content, including text, graphics, images and information, contained in or available through this repository is for educational purposes only.*
 
 
 ## Dependencies
