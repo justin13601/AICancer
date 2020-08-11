@@ -37,7 +37,7 @@ Inspired by our first APS360 lecture, in which we were shown a pigeon classifyin
 ## Overview
 The current lung and colon cancer diagnosis process requires a doctor to take multiple steps in testing, consulting lung and colon specialists, and receiving secondary opinions before arriving at a complete diagnosis. In our project, a user would acquire and input a histopathological lung or colon image into the model and receive a full diagnosis of cell type, cancerous status, and type of malignancy if applicable. 
 
-ML streamlines the cancer diagnosis process, in which intermediate diagnoses are automated and gives one final output diagnosis. Further, multiple patient diagnoses can be received at once through image batching. Users also do not have to be a doctor; they can be assistants or imaging specialists who relay the output to the primary doctor to analyze. As such, our model acts as a ‘second opinion’ for medical professionals.
+ML streamlines the process by automating intermediate steps to give one complete output diagnosis. Users also do not have to be a doctor; they can be assistants who relay the output to the primary doctor to analyze. As such, our model acts as a ‘second opinion’ for medical professionals.
 
 <table align="center">
 <thead>
@@ -63,7 +63,7 @@ ML streamlines the cancer diagnosis process, in which intermediate diagnoses are
     Benefits of Using ML for Cancer Cell Classification
 </p>
 
-We chose to classify lung and colon cells specifically as there is an abundance of histopathological cell data for these classes to train and test our model on. Doctors also may not be the ones to extract images from a patient and a classifier that is able to sort images by organ can help reduce misunderstanding in these cases. Further, it allows users to input multiple images in a batch (perhaps each from a different patient) without having to manually sort and remember organ types beforehand. Both organs can be affected by the same type of cancer, adenocarcinoma, which adds complexity to the problem. With an initial organ differentiation step, we hope to minimize these scenarios where cancer is diagnosed properly, but the organ is misclassified. With sufficient available data we would hope to expand classification to other organ types, however we believe the chosen classes illustrate the potential of ML in this situation.
+We chose to classify lung and colon cells as there is an abundance of data to train and test our model on. Doctors also may not be the ones to extract images from a patient and a classifier that can sort images by organ can reduce misunderstanding in these cases. Further, users can input multiple images in a batch (perhaps each from a different patient) without having to manually sort and remember organ types beforehand. Both organs can also be affected by adenocarcinoma, which adds complexity to the problem. With an organ differentiation step, we hope to minimize scenarios where cancer is diagnosed properly, but the organ is misclassified. With sufficient data we hope to expand classification to other organs, however we believe the chosen classes illustrate the potential of ML in this situation.
 
 
 ***Features:***
@@ -119,17 +119,17 @@ Console output:
 
 
 ## Background & Related Work
-Machine learning is an evolving technology that is proving to be increasingly useful in cancer diagnosis. Algorithms are already being created for some of the most common forms of the disease: brain cancer, prostate cancer, breast cancer, lung cancer, bone cancer, skin cancer and more [2].
+ML is an evolving technology that is proving to be increasingly useful in cancer diagnosis. Algorithms are being created for some of the most common forms of the disease: brain cancer, prostate cancer, breast cancer, lung cancer, bone cancer, skin cancer and more [2].
 
-Most recently, a new project received praise for its ability to detect cancerous tumours extremely effectively [3]. The initiative was led by Google Health and Imperial College London in a collaborative effort to use technology to enhance breast cancer screening methods [3]. The algorithm was created using a sample set of 29,000 mammograms, and was tested against the judgement of professional radiologists [3]. When verified against one radiologist, the effectiveness of the algorithm was proven to actually be better, approximately on par with a two-person team [3]. 
+Most recently, a new project received praise for its ability to detect cancerous tumours extremely effectively [3]. The initiative was led by Google Health and Imperial College London in an effort to use technology to enhance breast cancer screening methods [3]. The algorithm was created using a sample set of 29,000 mammograms, and was tested against the judgement of professional radiologists [3]. When verified against one radiologist, the effectiveness of the algorithm was proven to be better, on par with a two-person team [3]. 
 
-The benefits of an algorithm like this one are highly attractive because it offers large savings in time efficiency and can assist in healthcare systems lacking radiologists, such as in the UK [3]. In theory, this algorithm should be able to supplement the opinion of one radiologist to obtain optimal results [3].
+The benefits of an algorithm like this one are highly attractive because it offers savings in time efficiency and can assist in healthcare systems lacking radiologists [3]. In theory, this algorithm should be able to supplement the opinion of one radiologist to obtain optimal results [3].
 
-Our project has a similar goal of using AI to make decisions about the presence of cancer in scans. The success of this breast cancer algorithm shows that machine learning is capable of completing this task with remarkable results. 
+Our project has a similar goal of using AI to make decisions about the presence of cancer in scans. The success of this breast cancer algorithm shows that ML is capable of completing this task with remarkable results. 
 
 
 ## Data & Data Processing
-The data used is from Kaggle [4]. There are 5 classes of data: 2 colon types (benign and malignant: adenocarcinoma) and 3 lung types (benign, non-small cell lung cancer (NSCLC):  malignant - adenocarcinoma (ACA) and malignant - squamous cell carcinoma (SCC)).
+The data used is from Kaggle [4]. There are 5 classes of data: 2 colon types (benign and malignant: adenocarcinoma) and 3 lung types (benign, malignant - adenocarcinoma (ACA) and malignant - squamous cell carcinoma (SCC).
 
 <p align="center"><img src="/meta_images/data.png" alt="Data Visualization - Example from Each Class"></p>
 <p align="center">
@@ -139,7 +139,7 @@ The data used is from Kaggle [4]. There are 5 classes of data: 2 colon types (be
     Data Visualization - Example from Each Class
 </p>
 
-This dataset consists of 250 images of each class, which were pre-augmented to 5000 of each class (total of 25 000 images) [4]. We normalized the pixel intensity of the images to the [0,1] range using transforms.Normalize(0.5,0.5,0.5). Images were resized to 224x224 pixels for consistency and to reduce load on our model. Finally, images were transformed to tensors.
+This dataset consists of 250 images of each class, which were pre-augmented to 5,000 of each class (total of 25,000 images) [4]. We normalized the pixel intensity of the images to the [0,1] range and images were resized to 224x224 pixels for consistency and to reduce load on our model. Finally, images were transformed to tensors.
 
 <p align="center"><img src="/meta_images/image_processing.png" alt="Data Visualization - Unprocessed vs. Processed"></p>
 <p align="center">
@@ -168,7 +168,7 @@ To achieve this, we split the dataset into training, validation, individual test
 
 
 ## Model Architectures
-The architecture will consist of four separate binary CNNs that can be used in sequence or separately to categorize data. All CNNs will take in one preprocessed 224x224 square image and output either a zero or a one depending on the classification determined by the model. The first CNN will distinguish between lung and colon scans. If found to be a lung scan, the image will be passed into CNN #2 which will distinguish between malignant and benign lung cells. If found to be a colon scan, the image will be passed into CNN #3 which will distinguish between malignant and benign colon cells. The fourth CNN will be used in the case of malignant lung scans to classify the type of cancer detected to be either adenocarcinoma or squamous cell.
+The architecture consists of four separate binary CNNs. All CNNs take in one preprocessed 224x224 square image and output either a zero or a one depending on the classification determined by the model. The first CNN distinguishes between lung and colon scans. If found to be a lung scan, the image is passed into CNN #2 which distinguishes between malignant and benign lung cells. If found to be a colon scan, the image is passed into CNN #3 which distinguishes between malignant and benign colon cells. The fourth CNN is used to classify the type of lung cancer: adenocarcinoma or squamous cell.
 
 The CNN architecture was chosen for its invariance properties [5]. Since there is a high level of variance between images, such as differences in cell size, orientation, location, and the amount of cells per image, we require a model that can identify more complex patterns that may be present [5]. 
 
@@ -265,6 +265,8 @@ The CNN architecture was chosen for its invariance properties [5]. Since there i
 
 ## Baseline Model
 
+A Random Forests Classifier was the selected baseline. 1,000 estimators were used to train over 7,000 images from the training set. Next, 1,000 images were taken from the validation set and run through the classifier. The model achieved an 80.6% accuracy. This model showed several weaknesses, including classifying 19.7% of colon ACA images as benign, and classifying 25.0% of lung SCC images as lung ACA. Overall, differentiation between the two cancerous lung subtypes was often confused, and high false negative rates makes this model unsuitable for use.
+
 <p align="center"><img src="/meta_images/baseline_matrix.png" alt="Baseline Model Confusion Matrix Analysis"></p>
 <p align="center">
     <b>
@@ -283,6 +285,12 @@ The CNN architecture was chosen for its invariance properties [5]. Since there i
     </b>
     Overall Model Confusion Matrix Analysis
 </p>
+
+Performance of the model was reasonably good overall, with optimal results in lung benign, lung adenocarcinoma and colon adenocarcinoma scan classes. The overall model accuracy was 91.05%. The model had low error in differentiating lung and colon images. Accuracy between lung malignant and benign was also high. Since individual CNNs were used for each step of the classification process, each one had different hyperparameters and architecture that best fit the classification job.
+
+The accuracies of the more general convolutional neural networks (CNN 1 and CNN 2) are very high, and most error occurred in the periphery CNNs (CNN 3 and CNN 4). This ensured that minimal error propagation occurred.
+
+False negative results for both colon and lung were also low, indicating that the model would rarely ignore a cancerous scan. This is important, as false negative results could potentially cause the patient to have a false sense of security, and result in them seeking treatment much later when the cancer is much more serious. Our model avoids this crucial error.
 
 <table align="center">
 <thead>
@@ -327,7 +335,9 @@ The CNN architecture was chosen for its invariance properties [5]. Since there i
     Training, Validation, & Testing Accuracies for Each Convolutional Neural Network
 </p>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
+Drawbacks include a tendency to give a false positive result on colon images. The model frequently misdiagnosed healthy colon scans as having cancer. This could result in a healthy patient getting an additional scan or biopsy, which could be expensive or uncomfortable. Although this is less serious than false negative classification, it could have detrimental effects.
+
+Additionally, the model occasionally confused the cancerous lung subtypes, although significantly less frequently than the baseline model. This could require the doctor to consult with a specialist or lead the patient to pursue a treatment which is not appropriate. This is why this model is only intended to be used with a doctor at this stage; although the results obtained are very favourable, it is not a replacement for a medical professional.
 
 CNN #1 - Error/Loss Training Curves | CNN #2 - Error/Loss Training Curves | CNN #3 - Error/Loss Training Curves | CNN #4 - Error/Loss Training Curves 
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -349,11 +359,9 @@ CNN #1 - Error/Loss Training Curves | CNN #2 - Error/Loss Training Curves | CNN 
     Qualitative Sample Testing
 </p>
 
-Table 4 shows the model’s classification on the overall testing set, with 373 images of each class. 
+In Table 7, we see that the model performs the worst on benign colon scans, which we predicted, as CNN 3 did worse on classifying benign images in sample testing. Further, the model classifies benign lung images the best. This makes sense as these images only go through CNN 1 & 2 which had nearly perfect testing and sample accuracy.
 
-All diagonals on the matrix have values above 300, meaning the model has above 80% accuracy on each class. It performs the worst on benign colon scans, which we predicted from our individual sample testing, as CNN 3 did noticeably worse on classifying benign images. Further, the model classifies benign lung images the best. This makes sense as these images only go through CNN 1&2, both which had nearly perfect testing and sample accuracy.
-
-Benign colon scans are often classified as malignant which gives a high false positive rate for colon inputs and causes low accuracy. By comparison, benign lung scans are very rarely classified as malignant, and if they are, they are only classified as ACA. Conversely, only lung ACA cells are mistakenly classified as benign (false negative). Looking at samples of these images shows why: some lung ACA samples have red organelles, similar pink colours, and lots of negative space like benign images, whereas SCC images are overcrowded with dark blue/purple cells.
+Benign colon scans are often classified as malignant, giving a high false positive rate for colon inputs and causes low accuracy. By comparison, benign lung scans are rarely classified as malignant, and if they are, they are only classified as ACA. Conversely, only lung ACA cells are mistakenly classified as benign (false negative). Looking at samples of these images shows why: some lung ACA samples have red organelles, similar pink colours, and negative space like benign images, whereas SCC images are overcrowded with dark blue cells.
 
 <p align="center"><img src="/meta_images/dark_imgs.png" alt="Data Visualization: Lung Samples"></p>
 <p align="center">
@@ -363,7 +371,7 @@ Benign colon scans are often classified as malignant which gives a high false po
     Data Visualization - Lung Samples
 </p>
 
-Lung malignant sub-types are mistaken often, but it is more likely to classify SCC images as ACA. From the above image, one can see some similar features of these two samples. This is even clearer when we look at samples such as lungaca1123, where there is overcrowding and little negative space:
+Lung malignant sub-types are mistaken often, but it is more likely to classify SCC images as ACA. This is justified when looking at the following sample, where there is overcrowding and little negative space:
 
 <p align="center"><img src="/meta_images/lungaca1123.png" alt="Data Visualization - lungaca1123.png"></p>
 <p align="center">
@@ -373,7 +381,7 @@ Lung malignant sub-types are mistaken often, but it is more likely to classify S
     Data Visualization - lungaca1123.png
 </p>
 
-The final interesting result from our model is that while the lung vs colon classification is nearly perfect, it only failed in classifying colon ACA as lung ACA. This is interesting as colon and lung cells look very different in general, but when looking at some samples, we see that images that do not have defined cell edges look very similar to each other. As the converse isn’t true, there must be some features in colon ACA cells that resemble a lung cell. Overall, we see that lung ACA samples have a variety of features, some of which resemble those of other sub-types, which makes overall classification much more difficult.
+Although lung vs. colon classification is nearly perfect, our model failed on several occasions and classified colon ACA as lung ACA. Colon and lung cells look very different in general, but when looking at some samples, those that do not have defined cell edges look similar. As the converse isn’t true, there must be some features in colon ACA cells that resemble a lung cell. 
 
 <p align="center"><img src="/meta_images/lungaca_vs_colonca.png" alt="Data Visualization - Lung ACA Sample vs. Colon ACA Sample.png
 "></p>
@@ -386,15 +394,63 @@ The final interesting result from our model is that while the lung vs colon clas
 
 
 ## Model Evaluation
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
+To determine the model performance on new data, a holdout set of 10 images was used. Due to the nature of this problem, it was difficult to acquire completely new data, so we were restricted to a subset of the original images (holdout set). As our model performed well on these images, it is capable of generalizing to never before seen images, provided they are of the same style.
+
+<p align="center"><img src="/meta_images/evaluation_1.png" alt="Classification of Dataset Images"></p>
+<p align="center">
+    <b>
+        Table 8:
+    </b>
+    Classification of Dataset Images
+</p>
+
+A concern with using images from the same dataset is that the dataset had been augmented from 1250 original images. As we cannot identify augmented images, it is likely that testing images were not completely unique. This limits our ability to determine the models performance on completely new data, as although augmentation is sufficient to ensure the model doesn’t recognise the image, the style and features of the images are very similar.
+
+To further validate our model, we input 1 image of each class found on Google Images [6][7][8][9]. It correctly classified 2 of the 5 samples: the lung and colon benign images. The model correctly differentiated between lung and colon images 80% of the time, but struggled with the individual classes. As it was difficult to find credible images, we were unable to determine the method through which the scans were taken and prepared. However, it is likely that the process differed from the one used to prepare the images in our dataset, which can be visually confirmed by the significant differences in these images from our original ones.
+
+<p align="center"><img src="/meta_images/evaluation_2.png" alt="Classification of Google-Sourced Images"></p>
+<p align="center">
+    <b>
+        Table 9:
+    </b>
+    Classification of Google-Sourced Images
+</p>
+
+Performance on correctly prepared images showed that the model could classify new data, provided the new data was prepared in the same method as the data in the dataset was prepared. Our model was trained on one dataset so it has learned to identify only one method of scan acquisition and processing, which limits performance. However, the architecture and concepts discussed could be generalized if more credible data is made available.
 
     
 ## Discussion
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
+Using ML to complement medical diagnoses is a complicated and risky process. While false-positive results can induce further error, false-negative predictions prove fatal to a patient’s health and wellbeing. For example, in the case of CNN #2 and #3, incorrectly classifying a malignant image as benign in practice could be catastrophic to cancer survivorship.
+
+As is the case with most ML models, accuracy is the focal point. Using a test dataset of 1865 images, the algorithm achieved 91.05% accuracy - a successful result when compared with the baseline. However,  8.95% of the test set, surmounting to a total of 167 images, were misclassified, which is extremely significant in medicine.
+
+Because of the significance of even the tiniest  error, it is important to note that at this stage any ML model should only be used in addition to a medical professional’s expertise. Perhaps when our algorithm is used in conjunction with the knowledge of doctors, we could reduce misdiagnoses to a true 0%.
+
+<p align="center"><img src="/meta_images/ai_medicine.jpg" alt="AI in Medicine"></p>
+<p align="center">
+    <b>
+        Figure 12:
+    </b>
+    AI in Medicine [10]
+</p>
+
+Given our unique approach to the problem, it is important to address the benefits of an algorithm with 4 binary neural networks rather than one traditional multi-class CNN. As part of our project investigation, we designed a multi-class classifier to justify our decision.
+
+We noticed several shortcomings of the multi-class classifier: notably, it's memory and time intensive training (given that it would work with significantly more images divided into 5 classes), as well as lower accuracies (having only achieved 65% initially). Having 4 individual binary networks allows for precise tuning at each stage of the algorithm. In addition, having a high-accuracy model that differentiates between organs as the first step significantly reduces misclassification between cancers of similar types (Lung ACA vs. Colon ACA).
+
+A tree of models also permits flexibility for future development. Perhaps CNN 1 could be modified to include the classification of other key organs of the body, or CNN 4 could include small cell lung cancer (SCLC) in addition to NSCLC images (ACA and SCC). Finally, multiple models allow users to selectively “enable” classification functions to best cater their specific needs.
+ 
+Through the development of this repository, we’ve realized the impact of having preprocessed data. While prepared data may be perfect for training or validating a model, that same model would not perform as well on data that is processed differently (prepared with different dyes etc.). In addition, aggregate accuracy values are often misleading, and false negative/positive values are a more precise way to identify weaknesses in a model. Lastly, we’ve acknowledged that a traditional approach to a problem is not always the best one, as in our case separate binary models performed better than a multi-class classifier.
 
 
 ## Ethical Considerations
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper augue, eget euismod lorem. Nunc scelerisque massa sit amet dapibus rutrum. Donec sit amet sapien ante. Nam non dapibus eros. Duis condimentum nisi non rutrum finibus. Donec venenatis lorem a ultrices molestie. Nunc a mauris aliquam augue tincidunt ultrices ac in mi. Etiam vitae efficitur erat. Praesent accumsan augue et lectus congue aliquam.
+Ethical consequences of this algorithm are far-reaching, as the data is highly sensitive and the output can directly impact patients. The scans used to train, validate and test this model must be anonymous and consent must be obtained from all patients before the scans are used. 
+
+This algorithm should not be blindly trusted to make serious health diagnoses without the consultation of an experienced doctor. Trusting an algorithm to make health decisions is unethical, as it has limited context in which to make decisions (i.e. one scan only, limited to only those types of cancer) and will have limited accuracy. 
+
+Once the algorithm is ready to use in a clinical or research setting, doctors should be provided with information on how it works and made aware of the risks. This will prevent professional judgement from becoming overly dependent on the program.
+
+Ultimately, there is no doubt that we are still long ways away from being solely dependent on ML in the medical world, but with each project we stride closer to revolutionizing our health care.
 
 
 ## Project Presentation
@@ -415,3 +471,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ullamcorper aug
 [4] Borkowski AA, Bui MM, Thomas LB, Wilson CP, DeLand LA, Mastorides SM. Lung and Colon Cancer Histopathological Image Dataset (LC25000). [Dataset]. Available: https://www.kaggle.com/andrewmvd/lung-and-colon-cancer-histopathological-images [Accessed: 18 May 2020].
 
 [5]	S. Colic, Class Lecture, Topic: “CNN Architectures and Transfer Learning.” APS360H1, Faculty of Applied Science and Engineering, University of Toronto, Toronto, Jun., 1, 2020
+
+[6] Histology of the Lung. Youtube, 2016.
+
+[7] J. Stojšić, “Precise Diagnosis of Histological Type of Lung Carcinoma: The First Step in Personalized Therapy,” Lung Cancer - Strategies for Diagnosis and Treatment, 2018.
+
+[8]	V. S. Chandan, “Normal Histology of Gastrointestinal Tract,” Surgical Pathology of Non-neoplastic Gastrointestinal Diseases, pp. 3–18, 2019.
+
+[9]	Memorang, “Colon Cancer (MCC Exam #3) Flashcards,” Memorang. [Online]. Available: https://www.memorangapp.com/flashcards/92659/Colon_Cancer/. [Accessed: 10-Aug-2020].
+
+[10] J. Voigt, “The Future of Artificial Intelligence in Medicine,” Wharton Magazing. [Online]. Available: https://magazine.wharton.upenn.edu/digital/the-future-of-artificial-intelligence-in-medicine/. [Accessed: 10-Aug-2020].
