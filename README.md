@@ -10,7 +10,7 @@ Inspired by our first APS360 lecture, in which we were shown a pigeon classifyin
 
 ![License](https://img.shields.io/github/license/justin13601/AICancer) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/justin13601/AICancer.git/master?filepath=%2Fipynb_testing%2FProject_Notebook.ipynb)
 
-**Authors:**
+**Credits:**
 - https://github.com/sheralskumar
 - https://github.com/anna-cog
 - https://github.com/justin13601
