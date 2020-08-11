@@ -516,70 +516,70 @@ Ultimately, there is no doubt that we are still long ways away from being solely
     <td colspan="5">Tasks</td>
   </tr>
   <tr>
-    <td>1</td>
+    <td align="center">1</td>
     <td>Create data loaders for CNN 4 (create files, implement transforms, create loaders for train, val and test) </td>
     <td>Loading Kaggle Dataset into Google Colab</td>
     <td>Create data loaders for CNN 1</td>
     <td>Format Github Repo</td>
   </tr>
   <tr>
-    <td>2</td>
+    <td align="center">2</td>
     <td>Create/optimize CNN 4 architecture (tried different number of convolutional layers to maximize accuracy)</td>
     <td>Writing Helper  Functions </td>
     <td>Create/optimize CNN 1 architecture</td>
     <td>Create data loaders for CNN 2</td>
   </tr>
   <tr>
-    <td>3</td>
+    <td align="center">3</td>
     <td>Train CNN 4 (Optimize hyperparameters using Sheral’s training code, save checkpoint files, analyze error and loss graphs to prevent overfitting)</td>
     <td>Overall data splitting</td>
     <td>Training and Testing CNN 1</td>
     <td>Create/optimize CNN 2 architecture</td>
   </tr>
   <tr>
-    <td>4</td>
+    <td align="center">4</td>
     <td>Implement baseline model (Research random forests model for image classification, create data loader) </td>
     <td>Writing Training Function</td>
     <td>Hyperparamter tuning for CNN 1</td>
     <td>Hyperparameter tuning for CNN 2</td>
   </tr>
   <tr>
-    <td>5</td>
+    <td align="center">5</td>
     <td>Test/train baseline model (complete training, write code for false positive/negative matrix, write test code, record accuracy)</td>
     <td>Create data loaders for CNN 3</td>
     <td>Model linking code</td>
     <td>Training &amp; Testing CNN 2</td>
   </tr>
   <tr>
-    <td>6</td>
+    <td align="center">6</td>
     <td>20%:<br>Creating/troubleshooting code for combined models (implemented false negative/positive matrix, checked over code to find errors)</td>
     <td>Create/optimize CNN 3 architecture</td>
     <td>Complete mode accuracy testing code</td>
     <td>Troubleshooting CNN 2 code and retraining/testing</td>
   </tr>
   <tr>
-    <td>7</td>
+    <td align="center">7</td>
     <td>Analyzing false +/- of model results (created tables analyzing sources of error in results from the main model and the baseline model)</td>
     <td>Training &amp; Testing CNN 3</td>
     <td>Creating the Prezi (25%)</td>
     <td>Single Image Predict Function</td>
   </tr>
   <tr>
-    <td>8</td>
+    <td align="center">8</td>
     <td>25%:<br>Creating the Prezi (writing slides, drawing architecture diagram, finding background picture and theme)</td>
     <td>Hyperparameter tuning for CNN 3</td>
     <td></td>
     <td>Qualitative Sample Testing </td>
   </tr>
   <tr>
-    <td>9</td>
+    <td align="center">9</td>
     <td>Create data loaders for demo images and complete demo testing (remove images from test set, screen record demo on new images)</td>
     <td>Creating the Prezi (25%)</td>
     <td></td>
     <td>Creating the Prezi (25%)</td>
   </tr>
   <tr>
-    <td>10</td>
+    <td align="center">10</td>
     <td>Editing and compiling the video (finding background music, assembling voiceovers, doing screen recording of the Prezi, editing video together)</td>
     <td>Troubleshooting CNN 1 code and retraining/testing</td>
     <td></td>
@@ -589,35 +589,35 @@ Ultimately, there is no doubt that we are still long ways away from being solely
     <td colspan="5">Unfulfilled</td>
   </tr>
   <tr>
-    <td>1</td>
+    <td align="center">1</td>
     <td>Baseline model testing with all 17,500 images</td>
     <td>Qualitative model testing (samples)</td>
     <td></td>
     <td>False -/+ Prediction Analysis</td>
   </tr>
   <tr>
-    <td>2</td>
+    <td align="center">2</td>
     <td>Creating matplotlib diagrams within the Google Colab for false positive/negative data display</td>
     <td>Baseline model creation</td>
     <td></td>
     <td>Fully tune multiclass classifier</td>
   </tr>
   <tr>
-    <td>3</td>
+    <td align="center">3</td>
     <td></td>
     <td>Troubleshooting combined models code and prediction models</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>4</td>
+    <td align="center">4</td>
     <td></td>
     <td>False -/+ Prediction</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>5</td>
+    <td align="center">5</td>
     <td></td>
     <td>Trying to print/display images that the model misclassified</td>
     <td></td>
@@ -625,10 +625,10 @@ Ultimately, there is no doubt that we are still long ways away from being solely
   </tr>
   <tr>
     <td>Percentages</td>
-    <td>25%</td>
-    <td>25%</td>
-    <td>25%</td>
-    <td>25%</td>
+    <td align="center">25%</td>
+    <td align="center">25%</td>
+    <td align="center">25%</td>
+    <td align="center">25%</td>
   </tr>
 </tbody>
 </table>
