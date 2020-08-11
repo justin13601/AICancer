@@ -5,7 +5,7 @@
 
 # AICancer
 
-Inspired by our first APS360 lecture, in which we were shown a pigeon classifying cancer cells [1], we designed a project to use machine learning (ML) to classify complex cancer histopathological images. AICancer is an algorithm that differentiates between 5 classes of cancer images: first between colon and lung cell images, then between malignant and benign cells within these categories, and then finally into specific types of malignant cells.
+Inspired by our first APS360 lecture, in which we were shown a pigeon identifying cancerous cells [1], we designed a project to use machine learning (ML) to classify complex cancer histopathological images. AICancer is an algorithm that differentiates between 5 classes of cancer images: first between colon and lung cell images, then between malignant and benign cells within these categories, and then finally into specific types of malignant cells.
 
 [![Python](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://colab.research.google.com/)
 
@@ -270,7 +270,7 @@ Each CNN was trained, validated and tested using code adapted from APS360 Lab 2 
 
 ## Baseline Model
 
-A Random Forests Classifier was the selected baseline [12]. 1,000 estimators were used to train over 7,000 images from the training set. Next, 1,000 images were taken from the validation set and run through the classifier. The model achieved an 80.6% accuracy. This model showed several weaknesses, including classifying 19.7% of colon ACA images as benign, and classifying 25.0% of lung SCC images as lung ACA. Overall, differentiation between the two cancerous lung subtypes was often confused, and high false negative rates makes this model unsuitable for use.
+A Random Forests Classifier was the selected baseline [12]. 1,000 estimators were used to train over 7,000 images from the training set. Next, 1,000 images were taken from the validation set and run through the classifier. The model achieved an 80.6% accuracy. This model showed several weaknesses, including classifying 19.7% of colon ACA images as benign, and classifying 25.0% of lung SCC images as lung ACA. Overall, differentiation between the two cancerous lung subtypes was often confused, and high false negative rates made this model unsuitable for use.
 
 <p align="center"><img src="/meta_images/baseline_matrix.png" alt="Baseline Model Confusion Matrix Analysis"></p>
 <p align="center">
@@ -367,7 +367,7 @@ CNN #1 - Error/Loss Training Curves | CNN #2 - Error/Loss Training Curves | CNN 
 
 In Table 7, we see that the model performs the worst on benign colon scans, which we predicted, as CNN #3 did worse on classifying benign images in sample testing. Further, the model classifies benign lung images the best. This makes sense as these images only go through CNN #1 and #2 which had nearly perfect testing and sample accuracy.
 
-Benign colon scans are often classified as malignant, giving a high false positive rate for colon inputs and causes low accuracy. By comparison, benign lung scans are rarely classified as malignant, and if they are, they are only classified as ACA. Conversely, only lung ACA cells are mistakenly classified as benign (false negative). Looking at samples of these images shows why: some lung ACA samples have red organelles, similar pink colours, and negative space like benign images, whereas SCC images are overcrowded with dark blue cells.
+Benign colon scans are often classified as malignant, giving a high false positive rate for colon inputs. By comparison, benign lung scans are rarely classified as malignant, and if they are, they are only classified as ACA. Conversely, only lung ACA cells are mistakenly classified as benign (false negative). Looking at samples of these images shows why: some lung ACA samples have red organelles, similar pink colours, and negative space like benign images, whereas SCC images are overcrowded with dark blue cells.
 
 <p align="center"><img src="/meta_images/dark_imgs.png" alt="Data Visualization: Lung Samples"></p>
 <p align="center">
@@ -389,7 +389,7 @@ Lung malignant sub-types are mistaken often, but it is more likely to classify S
 
 Although lung vs. colon classification is nearly perfect, our model failed on several occasions and classified colon ACA as lung ACA. Colon and lung cells look very different in general, but when looking at some samples, those that do not have defined cell edges look similar. As the converse isn’t true, there must be some features in colon ACA cells that resemble a lung cell. 
 
-<p align="center"><img src="/meta_images/lungaca_vs_colonca.png" alt="Data Visualization - Lung ACA Sample vs. Colon ACA Sample.png
+<p align="center"><img src="/meta_images/lungaca_vs_colonca.png" alt="Data Visualization - Lung ACA Sample vs. Colon ACA Sample
 "></p>
 <p align="center">
     <b>
@@ -400,7 +400,7 @@ Although lung vs. colon classification is nearly perfect, our model failed on se
 
 
 ## Model Evaluation
-To determine the model performance on new data, a holdout set of 10 images was used. Due to the nature of this problem, it was difficult to acquire completely new data, so we were restricted to a subset of the original images (holdout set). As our model performed well on these images, it is capable of generalizing to never before seen images, provided they are of the same style.
+To show the model performance on new data, a demo set containing 10 images was used. Due to the nature of this problem, it was difficult to acquire completely new data, so we were restricted to a subset of the original images (holdout set). As our model performed well on these images, it is capable of generalizing to never before seen images, provided they are of the same style.
 
 <p align="center"><img src="/meta_images/evaluation_1.png" alt="Classification of Dataset Images"></p>
 <p align="center">
@@ -422,7 +422,7 @@ To further validate our model, we input 1 image of each class found on Google Im
     Classification of Google-Sourced Images
 </p>
 
-Performance on correctly prepared images showed that the model could classify new data, provided the new data was prepared in the same method as the data in the dataset was prepared. Our model was trained on one dataset so it has learned to identify only one method of scan acquisition and processing, which limits performance. However, the architecture and concepts discussed could be generalized if more credible data is made available.
+Performance on correctly prepared images showed that the model could classify new data, provided the new data was prepared in the same way as the data in the dataset was prepared. Our model was trained on one dataset so it has learned to identify only one method of scan acquisition and processing, which limits performance. However, the architecture and concepts discussed could be generalized if more credible data is made available.
 
     
 ## Discussion
@@ -444,7 +444,7 @@ Given our unique approach to the problem, it is important to address the benefit
 
 We noticed several shortcomings of the multi-class classifier: notably, it's memory and time intensive training (given that it would work with significantly more images divided into 5 classes), as well as lower accuracies (having only achieved 65% initially). Having 4 individual binary networks allows for precise tuning at each stage of the algorithm. In addition, having a high-accuracy model that differentiates between organs as the first step significantly reduces misclassification between cancers of similar types (Lung ACA vs. Colon ACA).
 
-A tree of models also permits flexibility for future development. Perhaps CNN #1 could be modified to include the classification of other key organs of the body, or CNN #4 could include small cell lung cancer (SCLC) in addition to NSCLC images (ACA and SCC). Finally, multiple models allow users to selectively “enable” classification functions to best cater their specific needs.
+A tree of models also permits flexibility for future development. Perhaps CNN #1 could be modified to include the classification of other key organs of the body, or CNN #4 could include small cell lung cancer (SCLC) in addition to NSCLC images (ACA and SCC). Finally, multiple models allow users to selectively “enable” classification functions to best cater to their specific needs.
  
 Through the development of this repository, we’ve realized the impact of having preprocessed data. While prepared data may be perfect for training or validating a model, that same model would not perform as well on data that is processed differently (prepared with different dyes etc.). In addition, aggregate accuracy values are often misleading, and false negative/positive values are a more precise way to identify weaknesses in a model. Lastly, we’ve acknowledged that a traditional approach to a problem is not always the best one, as in our case separate binary models performed better than a multi-class classifier.
 
@@ -554,7 +554,7 @@ Ultimately, there is no doubt that we are still long ways away from being solely
     <td align="center">6</td>
     <td>20%:<br>Creating/troubleshooting code for combined models (implemented false negative/positive matrix, checked over code to find errors)</td>
     <td>Create/optimize CNN 3 architecture</td>
-    <td>Complete mode accuracy testing code</td>
+    <td>Complete model accuracy testing code</td>
     <td>Troubleshooting CNN 2 code and retraining/testing</td>
   </tr>
   <tr>
