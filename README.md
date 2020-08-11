@@ -494,10 +494,10 @@ Ultimately, there is no doubt that we are still long ways away from being solely
 
 
 ## Individual Contributions
-<table align="center" style="undefined;table-layout: fixed; width: 1019px">
+<table align="center">
 <colgroup>
 <col style="width: 163px">
-<col style="width: 216px">
+<col style="width: 500px">
 <col style="width: 231px">
 <col style="width: 184px">
 <col style="width: 225px">
