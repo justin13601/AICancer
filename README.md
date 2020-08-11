@@ -24,6 +24,13 @@ Inspired by our first APS360 lecture, in which we were shown a pigeon classifyin
 - Torchvision
 - Pillow
 
+***Features:***
+- Uses PyTorch Library
+- 4 Convolutional Neural Network Models
+- Early Stopping via Checkpoint Files
+- Histopathological Images Input in .jpeg or .png Format
+- Classification of 5 Cancer Cell Classes
+- Python 3.6.9
 
 ## Quick Start
 
@@ -95,15 +102,6 @@ ML streamlines the process by automating intermediate steps to give one complete
 </p>
 
 We chose to classify lung and colon cells as there is an abundance of data to train and test our model on. Doctors also may not be the ones to extract images from a patient and a classifier that can sort images by organ can reduce misunderstanding in these cases. Further, users can input multiple images in a batch (perhaps each from a different patient) without having to manually sort and remember organ types beforehand. Both organs can also be affected by adenocarcinoma, which adds complexity to the problem. With an organ differentiation step, we hope to minimize scenarios where cancer is diagnosed properly, but the organ is misclassified. With sufficient data we hope to expand classification to other organs, however we believe the chosen classes illustrate the potential of ML in this situation.
-
-
-***Features:***
-- Uses PyTorch Library
-- 4 Convolutional Neural Network Models
-- Early Stopping via Checkpoint Files
-- Histopathological Images Input in .jpeg or .png Format
-- Classification of 5 Cancer Cell Classes
-- Python 3.6.9
 
 
 ## Project Illustration
