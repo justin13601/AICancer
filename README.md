@@ -497,10 +497,10 @@ Ultimately, there is no doubt that we are still long ways away from being solely
 <table align="center">
 <colgroup>
 <col style="width: 163px">
-<col style="width: 500px">
-<col style="width: 231px">
-<col style="width: 184px">
-<col style="width: 225px">
+<col style="width: 200px">
+<col style="width: 200px">
+<col style="width: 200px">
+<col style="width: 200px">
 </colgroup>
 <thead>
   <tr>
