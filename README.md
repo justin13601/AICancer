@@ -3,7 +3,7 @@
 
 ---------  
 
-# AICancer
+# AICancer or CaNNcer or think of a name
 
 Inspired by our first APS360 lecture, in which we were shown a pigeon classifying cancer cells [1], we designed a project to use machine learning (ML) to classify complex cancer histopathological images. AICancer is an algorithm that differentiates between 5 classes of cancer images: first between colon and lung cell images, then between malignant and benign cells within these categories, and then finally into specific types of malignant cells.
 
@@ -15,7 +15,7 @@ Inspired by our first APS360 lecture, in which we were shown a pigeon classifyin
 - https://github.com/sheralskumar
 - https://github.com/anna-cog
 - https://github.com/justin13601
-- https://github.com/TE-Harrison
+- MISSING LINK FOR ELYSIA
 
 ***Disclaimer:** This is a purely educational project. The information in this repository is not intended or implied to be a substitute for professional medical diagnoses. All content, including text, graphics, images and information, contained in or available through this repository is for educational purposes only.*
 
@@ -290,7 +290,7 @@ A Random Forests Classifier was the selected baseline. 1,000 estimators were use
 
 Performance of the model was reasonably good overall, with optimal results in lung benign, lung adenocarcinoma and colon adenocarcinoma scan classes. The overall model accuracy was 91.05%. The model had low error in differentiating lung and colon images. Accuracy between lung malignant and benign was also high. Since individual CNNs were used for each step of the classification process, each one had different hyperparameters and architecture that best fit the classification job.
 
-The accuracies of the more general convolutional neural networks (CNN 1 and CNN 2) are very high, and most error occurred in the periphery CNNs (CNN 3 and CNN 4). This ensured that minimal error propagation occurred.
+The accuracies of the more general convolutional neural networks (CNN #1 and CNN #2) are very high, and most error occurred in the periphery CNNs (CNN #3 and CNN #4). This ensured that minimal error propagation occurred.
 
 <table align="center">
 <thead>
@@ -362,7 +362,7 @@ CNN #1 - Error/Loss Training Curves | CNN #2 - Error/Loss Training Curves | CNN 
     Qualitative Sample Testing
 </p>
 
-In Table 7, we see that the model performs the worst on benign colon scans, which we predicted, as CNN 3 did worse on classifying benign images in sample testing. Further, the model classifies benign lung images the best. This makes sense as these images only go through CNN 1 & 2 which had nearly perfect testing and sample accuracy.
+In Table 7, we see that the model performs the worst on benign colon scans, which we predicted, as CNN #3 did worse on classifying benign images in sample testing. Further, the model classifies benign lung images the best. This makes sense as these images only go through CNN #1 and #2 which had nearly perfect testing and sample accuracy.
 
 Benign colon scans are often classified as malignant, giving a high false positive rate for colon inputs and causes low accuracy. By comparison, benign lung scans are rarely classified as malignant, and if they are, they are only classified as ACA. Conversely, only lung ACA cells are mistakenly classified as benign (false negative). Looking at samples of these images shows why: some lung ACA samples have red organelles, similar pink colours, and negative space like benign images, whereas SCC images are overcrowded with dark blue cells.
 
@@ -441,7 +441,7 @@ Given our unique approach to the problem, it is important to address the benefit
 
 We noticed several shortcomings of the multi-class classifier: notably, it's memory and time intensive training (given that it would work with significantly more images divided into 5 classes), as well as lower accuracies (having only achieved 65% initially). Having 4 individual binary networks allows for precise tuning at each stage of the algorithm. In addition, having a high-accuracy model that differentiates between organs as the first step significantly reduces misclassification between cancers of similar types (Lung ACA vs. Colon ACA).
 
-A tree of models also permits flexibility for future development. Perhaps CNN 1 could be modified to include the classification of other key organs of the body, or CNN 4 could include small cell lung cancer (SCLC) in addition to NSCLC images (ACA and SCC). Finally, multiple models allow users to selectively “enable” classification functions to best cater their specific needs.
+A tree of models also permits flexibility for future development. Perhaps CNN #1 could be modified to include the classification of other key organs of the body, or CNN #4 could include small cell lung cancer (SCLC) in addition to NSCLC images (ACA and SCC). Finally, multiple models allow users to selectively “enable” classification functions to best cater their specific needs.
  
 Through the development of this repository, we’ve realized the impact of having preprocessed data. While prepared data may be perfect for training or validating a model, that same model would not perform as well on data that is processed differently (prepared with different dyes etc.). In addition, aggregate accuracy values are often misleading, and false negative/positive values are a more precise way to identify weaknesses in a model. Lastly, we’ve acknowledged that a traditional approach to a problem is not always the best one, as in our case separate binary models performed better than a multi-class classifier.
 
